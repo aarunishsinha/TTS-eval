@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blind listening test</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#171B21;
+    --panel:#212832;
+    --panel-hi:#2B3543;
+    --line:#333C4A;
+    --ink:#E6EAF0;
+    --ink-dim:#8E9AAB;
+    --signal:#E8A33D;
+    --chosen:#4FB3A5;
+    --radius:4px;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"IBM Plex Sans","Noto Sans Devanagari",system-ui,sans-serif;
+    font-size:16px; line-height:1.5;
+    display:flex; flex-direction:column;
+  }
+  button{font:inherit;color:inherit;cursor:pointer;border:none;background:none}
+  button:focus-visible{outline:2px solid var(--signal);outline-offset:2px}
+
+  /* progress */
+  .bar{height:3px;background:var(--line);flex:none}
+  .bar span{display:block;height:100%;background:var(--signal);transition:width .3s}
+
+  header{
+    flex:none;display:flex;justify-content:space-between;align-items:baseline;
+    padding:14px 24px;border-bottom:1px solid var(--line);
+  }
+  header h1{font-size:15px;font-weight:600;margin:0;letter-spacing:-.01em}
+  header .count{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink-dim)}
+
+  main{
+    flex:1;display:flex;flex-direction:column;justify-content:center;
+    gap:28px;padding:32px 24px;max-width:920px;margin:0 auto;width:100%;
+  }
+
+  /* the reference sentence */
+  .ref{text-align:center}
+  .ref .meta{
+    font-family:"IBM Plex Mono",monospace;font-size:12px;
+    color:var(--ink-dim);margin-bottom:10px;
+  }
+  .ref p{
+    margin:0;font-size:clamp(20px,3.4vw,30px);line-height:1.35;
+    font-weight:500;letter-spacing:-.015em;
+  }
+  .ref .tests{font-size:13px;color:var(--ink-dim);margin-top:10px}
+
+  /* the two arms — this is the hero */
+  .arms{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .arm{
+    position:relative;overflow:hidden;
+    background:var(--panel);border:1px solid var(--line);
+    border-radius:var(--radius);
+    min-height:132px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:8px;transition:background .12s,border-color .12s;
+  }
+  .arm:hover{background:var(--panel-hi)}
+  .arm .letter{font-size:34px;font-weight:600;line-height:1;letter-spacing:-.02em}
+  .arm .hint{font-size:13px;color:var(--ink-dim)}
+  .arm.playing{border-color:var(--signal)}
+  .arm .fill{
+    position:absolute;inset:0 auto 0 0;width:0;
+    background:var(--signal);opacity:.13;pointer-events:none;
+  }
+  .arm.heard .letter{color:var(--ink-dim)}
+
+  /* verdict row */
+  .verdict{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+  .verdict button{
+    padding:15px 10px;border:1px solid var(--line);border-radius:var(--radius);
+    background:var(--panel);text-align:center;font-weight:500;
+    transition:background .12s,border-color .12s,color .12s;
+  }
+  .verdict button:hover:not(:disabled){border-color:var(--chosen);color:var(--chosen)}
+  .verdict button:disabled{opacity:.35;cursor:not-allowed}
+  .verdict .k{
+    display:block;font-family:"IBM Plex Mono",monospace;
+    font-size:11px;color:var(--ink-dim);margin-top:3px;
+  }
+
+  footer{
+    flex:none;display:flex;justify-content:space-between;align-items:center;
+    gap:16px;padding:12px 24px;border-top:1px solid var(--line);
+    font-size:13px;color:var(--ink-dim);
+  }
+  footer button{
+    padding:7px 14px;border:1px solid var(--line);border-radius:var(--radius);
+  }
+  footer button:hover{border-color:var(--ink-dim);color:var(--ink)}
+
+  .notice{
+    max-width:520px;margin:auto;padding:28px;text-align:center;
+    color:var(--ink-dim);line-height:1.6;
+  }
+  .notice code{
+    font-family:"IBM Plex Mono",monospace;color:var(--ink);
+    background:var(--panel);padding:2px 6px;border-radius:3px;
+  }
+  @media (max-width:640px){
+    .arms{grid-template-columns:1fr}
+    .verdict{grid-template-columns:1fr}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="bar"><span id="progress" style="width:0"></span></div>
+
+<header>
+  <h1>Blind listening test</h1>
+  <div class="count" id="count"></div>
+</header>
+
+<main id="stage">
+  <div class="notice">Loading <code>out/manifest.json</code>…</div>
+</main>
+
+<footer>
+  <div id="status">Play both, then pick the one that sounds more like a person.</div>
+  <div style="display:flex;gap:8px">
+    <button id="skip">Skip</button>
+    <button id="save">Save results</button>
+  </div>
+</footer>
+
+<script>
+const state = { trials: [], i: 0, results: [], heard: new Set(), audio: null };
+
+// ---------------------------------------------------------------- build trials
+function pairsFrom(renders) {
+  // Group by sentence, then every unordered pair of distinct arms.
+  const bySentence = {};
+  for (const r of renders) {
+    const arm = r.provider + "/" + r.voice;
+    (bySentence[r.id] ||= {})[arm] = r;
+  }
+  const trials = [];
+  for (const [sid, arms] of Object.entries(bySentence)) {
+    const keys = Object.keys(arms);
+    for (let a = 0; a < keys.length; a++)
+      for (let b = a + 1; b < keys.length; b++) {
+        // randomise which arm lands on the left so position bias cancels
+        const flip = Math.random() < 0.5;
+        trials.push({
+          sentence: sid,
+          A: arms[keys[flip ? b : a]],
+          B: arms[keys[flip ? a : b]],
+        });
+      }
+  }
+  // shuffle so a vendor's weak category doesn't arrive as a run
+  for (let i = trials.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [trials[i], trials[j]] = [trials[j], trials[i]];
+  }
+  return trials;
+}
+
+// ---------------------------------------------------------------- rendering
+function render() {
+  const stage = document.getElementById("stage");
+  if (state.i >= state.trials.length) {
+    stage.innerHTML = `<div class="notice">
+      <p style="color:var(--ink);font-size:19px;margin:0 0 12px">Done — ${state.results.length} judgments.</p>
+      <p style="margin:0">Save the results, then open <code>results.csv</code>
+      alongside <code>out/scores.csv</code>. Preference tells you which voice
+      people like; CER tells you which one they can understand. You need both.</p></div>`;
+    document.getElementById("count").textContent = "";
+    return;
+  }
+
+  const t = state.trials[state.i];
+  const s = state.manifest.sentences[t.sentence];
+  state.heard.clear();
+
+  stage.innerHTML = `
+    <div class="ref">
+      <div class="meta">${t.sentence} · ${s.category} · ${s.variant}</div>
+      <p>${escapeHtml(s.text)}</p>
+      <div class="tests">${escapeHtml(s.tests)}</div>
+    </div>
+    <div class="arms">
+      <button class="arm" data-arm="A">
+        <span class="fill"></span><span class="letter">A</span>
+        <span class="hint">press 1 to play</span>
+      </button>
+      <button class="arm" data-arm="B">
+        <span class="fill"></span><span class="letter">B</span>
+        <span class="hint">press 2 to play</span>
+      </button>
+    </div>
+    <div class="verdict">
+      <button data-pick="A" disabled>A sounds more human<span class="k">a</span></button>
+      <button data-pick="tie" disabled>No difference<span class="k">t</span></button>
+      <button data-pick="B" disabled>B sounds more human<span class="k">b</span></button>
+    </div>`;
+
+  stage.querySelectorAll(".arm").forEach(el =>
+    el.addEventListener("click", () => play(el.dataset.arm)));
+  stage.querySelectorAll("[data-pick]").forEach(el =>
+    el.addEventListener("click", () => choose(el.dataset.pick)));
+
+  const n = state.trials.length;
+  document.getElementById("count").textContent = `${state.i + 1} / ${n}`;
+  document.getElementById("progress").style.width = (state.i / n * 100) + "%";
+}
+
+function play(arm) {
+  const t = state.trials[state.i];
+  if (state.audio) { state.audio.pause(); }
+  document.querySelectorAll(".arm").forEach(e => {
+    e.classList.remove("playing");
+    e.querySelector(".fill").style.width = "0";
+  });
+
+  const el = document.querySelector(`.arm[data-arm="${arm}"]`);
+  const fill = el.querySelector(".fill");
+  el.classList.add("playing");
+
+  const a = new Audio("out/" + t[arm].path);
+  state.audio = a;
+  a.addEventListener("timeupdate", () => {
+    if (a.duration) fill.style.width = (a.currentTime / a.duration * 100) + "%";
+  });
+  a.addEventListener("ended", () => {
+    el.classList.remove("playing");
+    el.classList.add("heard");
+    fill.style.width = "0";
+    state.heard.add(arm);
+    if (state.heard.size === 2)
+      document.querySelectorAll("[data-pick]").forEach(b => b.disabled = false);
+  });
+  a.play().catch(() => {
+    document.getElementById("status").textContent =
+      "Could not load audio — is this page being served over http, not file://?";
+  });
+}
+
+function choose(pick) {
+  const t = state.trials[state.i];
+  const winner = pick === "tie" ? "tie"
+    : `${t[pick].provider}/${t[pick].voice}`;
+  const loser = pick === "tie" ? "tie"
+    : `${t[pick === "A" ? "B" : "A"].provider}/${t[pick === "A" ? "B" : "A"].voice}`;
+  state.results.push({
+    sentence: t.sentence,
+    category: state.manifest.sentences[t.sentence].category,
+    left: `${t.A.provider}/${t.A.voice}`,
+    right: `${t.B.provider}/${t.B.voice}`,
+    winner, loser,
+  });
+  next();
+}
+
+function next() { state.i++; if (state.audio) state.audio.pause(); render(); }
+
+function saveCsv() {
+  if (!state.results.length) return;
+  const cols = Object.keys(state.results[0]);
+  const csv = [cols.join(",")].concat(
+    state.results.map(r => cols.map(c => `"${String(r[c]).replace(/"/g,'""')}"`).join(","))
+  ).join("\n");
+  const url = URL.createObjectURL(new Blob([csv], {type:"text/csv"}));
+  const a = Object.assign(document.createElement("a"),
+    {href:url, download:"results.csv"});
+  a.click(); URL.revokeObjectURL(url);
+}
+
+function escapeHtml(s){
+  return s.replace(/[&<>"']/g, c =>
+    ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+
+document.getElementById("save").addEventListener("click", saveCsv);
+document.getElementById("skip").addEventListener("click", next);
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "INPUT") return;
+  const k = e.key.toLowerCase();
+  if (k === "1") play("A");
+  else if (k === "2") play("B");
+  else if (state.heard.size === 2 && ["a","b","t"].includes(k))
+    choose(k === "t" ? "tie" : k.toUpperCase());
+});
+
+// ---------------------------------------------------------------- boot
+fetch("out/manifest.json")
+  .then(r => r.json())
+  .then(m => {
+    state.manifest = m;
+    state.trials = pairsFrom(m.renders);
+    if (!state.trials.length) {
+      document.getElementById("stage").innerHTML =
+        `<div class="notice">Only one arm rendered so far. Run
+        <code>synth.py</code> with a second provider or voice — a blind test
+        needs something to compare against.</div>`;
+      return;
+    }
+    render();
+  })
+  .catch(() => {
+    document.getElementById("stage").innerHTML =
+      `<div class="notice">Could not read <code>out/manifest.json</code>.<br><br>
+      Run <code>python -m http.server 8000</code> in this folder and open
+      <code>localhost:8000/listen.html</code> — opening the file directly
+      blocks the fetch.</div>`;
+  });
+</script>
+</body>
+</html>

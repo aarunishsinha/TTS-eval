@@ -1,0 +1,70 @@
+id,category,variant,text,tests
+CLI-01,climate,roman,AC ko 22 degree pe set kar diya hai.,numeral + unit inside Hindi frame
+CLI-01d,climate,devanagari,एसी को 22 डिग्री पे सेट कर दिया है।,same sentence in native script
+CLI-02,climate,roman,Fan speed teen kar raha hoon.,Hindi numeral word not digit
+CLI-02d,climate,devanagari,फैन स्पीड तीन कर रहा हूँ।,same sentence in native script
+CLI-03,climate,mixed,Cabin अभी 34 degrees है — cooling on कर दूँ?,mid-sentence script switch + question intonation
+CLI-04,climate,roman,Recirculation on hai. Bahar ki hawa band hai.,two short clauses
+CLI-05,climate,roman,Defogger chala diya. Windshield saaf ho jayega.,domain noun + future tense
+WIN-01,windows,roman,Saari windows band kar di hain.,plural agreement
+WIN-01d,windows,devanagari,सारी विंडोज़ बंद कर दी हैं।,loanword in Devanagari
+WIN-02,windows,roman,Driver side window thoda sa khol diya.,positional noun phrase
+WIN-03,windows,mixed,Sunroof 40 percent खुला है.,percent + script switch
+WIN-04,windows,roman,Child lock on hai, rear windows nahi khulengi.,comma pause + negation
+NAV-01,navigation,roman,Koramangala 4th Block tak 18 minute lagenge.,Bengaluru locality + ordinal + duration
+NAV-01d,navigation,devanagari,कोरमंगला फोर्थ ब्लॉक तक 18 मिनट लगेंगे।,same in native script
+NAV-02,navigation,roman,Outer Ring Road pe traffic heavy hai, HSR Layout se jaayein?,proper nouns + suggestion intonation
+NAV-03,navigation,roman,Indiranagar 100 Feet Road pe pahunch gaye hain.,number-in-name (100 Feet Road)
+NAV-04,navigation,mixed,अगला turn Silk Board junction पे है.,dense script mixing
+NAV-05,navigation,roman,Whitefield tak ka route Marathahalli se hoke jaata hai.,three proper nouns in one clause
+NAV-06,navigation,roman,Aap Jayanagar 9th Block mein hain.,ordinal inside place name
+NAV-07,navigation,roman,Yeh route toll-free hai lekin 12 kilometre lamba hai.,hyphenated English term + unit
+NAV-08,navigation,roman,Nearest petrol pump 2 point 3 kilometre door hai.,decimal spoken form
+MED-01,media,roman,Arijit Singh ka gaana chala raha hoon.,Indian person name
+MED-02,media,roman,Volume 60 percent kar diya.,percent
+MED-03,media,mixed,Playlist में 24 songs हैं.,count + script switch
+MED-04,media,roman,Bluetooth se connect ho gaya. Ab music play kar sakte hain.,tech loanword chain
+MED-05,media,roman,FM 93.5 Red FM laga diya.,decimal in station name
+VEH-01,status,roman,Fuel 24 percent hai — lagbhag 180 kilometre chal jayega.,two numbers + em dash pause
+VEH-02,status,roman,Tyre pressure front left mein thoda kam hai.,English technical phrase in Hindi frame
+VEH-03,status,mixed,Battery 78% चार्ज है.,percent symbol not word
+VEH-04,status,roman,Service due hai. 1,200 kilometre baaki hain.,comma-grouped thousands
+VEH-05,status,roman,Engine temperature normal hai.,short flat statement
+VEH-06,status,roman,Seatbelt rear right mein nahi laga hai.,position chain
+MAN-01,manual,roman,Owner's manual ke hisaab se, tyre pressure 33 PSI hona chahiye.,possessive apostrophe + unit abbreviation
+MAN-02,manual,roman,Yeh warning light low oil pressure batata hai. Gaadi rok dijiye.,two-sentence advisory
+MAN-03,manual,mixed,Spare tyre बूट के नीचे है, tools उसी के साथ रखे हैं.,long mixed-script sentence
+MAN-04,manual,roman,Regenerative braking ko level 2 pe rakhna better hai city mein.,EV terminology
+MAN-05,manual,roman,ABS aur ESP dono active hain.,acronyms spoken as letters
+NUM-01,numbers,roman,Abhi shaam ke 6 baj kar 45 minute hue hain.,time in Hindi convention
+NUM-01d,numbers,devanagari,अभी शाम के 6 बजकर 45 मिनट हुए हैं।,same in native script
+NUM-02,numbers,roman,Aapki EMI 12,345 rupaye 15 tareekh ko due hai.,currency + date
+NUM-03,numbers,mixed,Trip meter 1,04,500 किलोमीटर दिखा रहा है.,Indian lakh-style digit grouping
+NUM-04,numbers,roman,Average 18 point 4 kilometre per litre hai.,decimal + compound unit
+NUM-05,numbers,roman,Booking reference AB 7 7 4 2 K hai.,alphanumeric read as characters
+NUM-06,numbers,roman,Charging 80 percent tak 35 minute lega.,two numbers different units
+CNV-01,conversational,roman,Haan bilkul, main dekh leta hoon.,natural filler + colloquial
+CNV-02,conversational,roman,Sorry, main samajh nahi paaya. Phir se boliye?,apology + question
+CNV-03,conversational,mixed,ठीक है, कर देता हूँ।,pure Hindi short reply
+CNV-04,conversational,roman,Aaj Bengaluru mein baarish ka chance hai, windows band rakhiye.,weather advisory
+CNV-05,conversational,roman,Good morning! Kahan chalna hai aaj?,English greeting + Hindi question
+CNV-06,conversational,roman,Ye kaam main abhi nahi kar sakta, gaadi chalti hui hai.,polite refusal
+CNV-07,conversational,roman,Bas ho gaya.,two-word utterance, tests very short input
+CNV-08,conversational,mixed,Samajh gaya — navigation start कर रहा हूँ.,em dash + switch
+ERR-01,errors,roman,Network nahi mil raha, offline mode pe chala gaya hoon.,failure message, must sound calm
+ERR-02,errors,roman,Yeh command samajh nahi aayi.,short error
+ERR-03,errors,mixed,Connection टूट गया है, दोबारा try कीजिए.,mixed script error
+ERR-04,errors,roman,Safety ke liye ye driving ke dauraan available nahi hai.,safety refusal, tone matters
+PHN-01,phone,roman,Priya ko call kar raha hoon.,Indian first name
+PHN-02,phone,roman,Rajesh Kumar Sharma ka number save kiya hai.,full Indian name
+PHN-03,phone,roman,Missed call hai Amma se, 20 minute pehle.,kinship term + duration
+PHN-04,phone,mixed,Message भेज दिया है.,short mixed
+LNG-01,long,roman,Aapki gaadi ka next service 3,000 kilometre ya do mahine mein due hai, jo pehle aaye. Service centre book karne ke liye main appointment schedule kar sakta hoon.,long two-sentence, tests prosody over length
+LNG-02,long,mixed,Route पे तीन toll plazas हैं और कुल toll लगभग 240 rupaye होगा. FASTag balance sufficient है, इसलिए कोई issue नहीं आएगा.,long mixed-script, tests seam quality
+LNG-03,long,roman,Regenerative braking ka matlab hai ki jab aap accelerator chhodte hain, motor generator ki tarah kaam karta hai aur battery ko thodi charge wapas deta hai.,explanatory register, tests naturalness in teaching tone
+EDG-01,edge,roman,Toh?,single word question
+EDG-02,edge,roman,OK.,single English token
+EDG-03,edge,devanagari,हाँ।,single Hindi token
+EDG-04,edge,roman,22.5,bare number with decimal
+EDG-05,edge,roman,Hmm... theek hai.,ellipsis + hesitation
+EDG-06,edge,roman,Kya aapne kaha 'window kholo' ya 'window band karo'?,nested quotes + disjunction
