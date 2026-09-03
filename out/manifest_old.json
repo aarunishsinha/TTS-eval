@@ -1,0 +1,1407 @@
+{
+  "sentences": {
+    "CLI-01": {
+      "text": "AC ko 22 degree pe set kar diya hai.",
+      "category": "climate",
+      "variant": "roman",
+      "tests": "numeral + unit inside Hindi frame"
+    },
+    "CLI-01d": {
+      "text": "एसी को 22 डिग्री पे सेट कर दिया है।",
+      "category": "climate",
+      "variant": "devanagari",
+      "tests": "same sentence in native script"
+    },
+    "CLI-02": {
+      "text": "Fan speed teen kar raha hoon.",
+      "category": "climate",
+      "variant": "roman",
+      "tests": "Hindi numeral word not digit"
+    },
+    "CLI-02d": {
+      "text": "फैन स्पीड तीन कर रहा हूँ।",
+      "category": "climate",
+      "variant": "devanagari",
+      "tests": "same sentence in native script"
+    },
+    "CLI-03": {
+      "text": "Cabin अभी 34 degrees है — cooling on कर दूँ?",
+      "category": "climate",
+      "variant": "mixed",
+      "tests": "mid-sentence script switch + question intonation"
+    },
+    "CLI-04": {
+      "text": "Recirculation on hai. Bahar ki hawa band hai.",
+      "category": "climate",
+      "variant": "roman",
+      "tests": "two short clauses"
+    },
+    "CLI-05": {
+      "text": "Defogger chala diya. Windshield saaf ho jayega.",
+      "category": "climate",
+      "variant": "roman",
+      "tests": "domain noun + future tense"
+    },
+    "WIN-01": {
+      "text": "Saari windows band kar di hain.",
+      "category": "windows",
+      "variant": "roman",
+      "tests": "plural agreement"
+    },
+    "WIN-01d": {
+      "text": "सारी विंडोज़ बंद कर दी हैं।",
+      "category": "windows",
+      "variant": "devanagari",
+      "tests": "loanword in Devanagari"
+    },
+    "WIN-02": {
+      "text": "Driver side window thoda sa khol diya.",
+      "category": "windows",
+      "variant": "roman",
+      "tests": "positional noun phrase"
+    },
+    "WIN-03": {
+      "text": "Sunroof 40 percent खुला है.",
+      "category": "windows",
+      "variant": "mixed",
+      "tests": "percent + script switch"
+    },
+    "WIN-04": {
+      "text": "Child lock on hai",
+      "category": "windows",
+      "variant": "roman",
+      "tests": " rear windows nahi khulengi."
+    },
+    "NAV-01": {
+      "text": "Koramangala 4th Block tak 18 minute lagenge.",
+      "category": "navigation",
+      "variant": "roman",
+      "tests": "Bengaluru locality + ordinal + duration"
+    },
+    "NAV-01d": {
+      "text": "कोरमंगला फोर्थ ब्लॉक तक 18 मिनट लगेंगे।",
+      "category": "navigation",
+      "variant": "devanagari",
+      "tests": "same in native script"
+    },
+    "NAV-02": {
+      "text": "Outer Ring Road pe traffic heavy hai",
+      "category": "navigation",
+      "variant": "roman",
+      "tests": " HSR Layout se jaayein?"
+    },
+    "NAV-03": {
+      "text": "Indiranagar 100 Feet Road pe pahunch gaye hain.",
+      "category": "navigation",
+      "variant": "roman",
+      "tests": "number-in-name (100 Feet Road)"
+    },
+    "NAV-04": {
+      "text": "अगला turn Silk Board junction पे है.",
+      "category": "navigation",
+      "variant": "mixed",
+      "tests": "dense script mixing"
+    },
+    "NAV-05": {
+      "text": "Whitefield tak ka route Marathahalli se hoke jaata hai.",
+      "category": "navigation",
+      "variant": "roman",
+      "tests": "three proper nouns in one clause"
+    },
+    "NAV-06": {
+      "text": "Aap Jayanagar 9th Block mein hain.",
+      "category": "navigation",
+      "variant": "roman",
+      "tests": "ordinal inside place name"
+    },
+    "NAV-07": {
+      "text": "Yeh route toll-free hai lekin 12 kilometre lamba hai.",
+      "category": "navigation",
+      "variant": "roman",
+      "tests": "hyphenated English term + unit"
+    },
+    "NAV-08": {
+      "text": "Nearest petrol pump 2 point 3 kilometre door hai.",
+      "category": "navigation",
+      "variant": "roman",
+      "tests": "decimal spoken form"
+    },
+    "MED-01": {
+      "text": "Arijit Singh ka gaana chala raha hoon.",
+      "category": "media",
+      "variant": "roman",
+      "tests": "Indian person name"
+    },
+    "MED-02": {
+      "text": "Volume 60 percent kar diya.",
+      "category": "media",
+      "variant": "roman",
+      "tests": "percent"
+    },
+    "MED-03": {
+      "text": "Playlist में 24 songs हैं.",
+      "category": "media",
+      "variant": "mixed",
+      "tests": "count + script switch"
+    },
+    "MED-04": {
+      "text": "Bluetooth se connect ho gaya. Ab music play kar sakte hain.",
+      "category": "media",
+      "variant": "roman",
+      "tests": "tech loanword chain"
+    },
+    "MED-05": {
+      "text": "FM 93.5 Red FM laga diya.",
+      "category": "media",
+      "variant": "roman",
+      "tests": "decimal in station name"
+    },
+    "VEH-01": {
+      "text": "Fuel 24 percent hai — lagbhag 180 kilometre chal jayega.",
+      "category": "status",
+      "variant": "roman",
+      "tests": "two numbers + em dash pause"
+    },
+    "VEH-02": {
+      "text": "Tyre pressure front left mein thoda kam hai.",
+      "category": "status",
+      "variant": "roman",
+      "tests": "English technical phrase in Hindi frame"
+    },
+    "VEH-03": {
+      "text": "Battery 78% चार्ज है.",
+      "category": "status",
+      "variant": "mixed",
+      "tests": "percent symbol not word"
+    },
+    "VEH-04": {
+      "text": "Service due hai. 1",
+      "category": "status",
+      "variant": "roman",
+      "tests": "200 kilometre baaki hain."
+    },
+    "VEH-05": {
+      "text": "Engine temperature normal hai.",
+      "category": "status",
+      "variant": "roman",
+      "tests": "short flat statement"
+    },
+    "VEH-06": {
+      "text": "Seatbelt rear right mein nahi laga hai.",
+      "category": "status",
+      "variant": "roman",
+      "tests": "position chain"
+    },
+    "MAN-01": {
+      "text": "Owner's manual ke hisaab se",
+      "category": "manual",
+      "variant": "roman",
+      "tests": " tyre pressure 33 PSI hona chahiye."
+    },
+    "MAN-02": {
+      "text": "Yeh warning light low oil pressure batata hai. Gaadi rok dijiye.",
+      "category": "manual",
+      "variant": "roman",
+      "tests": "two-sentence advisory"
+    },
+    "MAN-03": {
+      "text": "Spare tyre बूट के नीचे है",
+      "category": "manual",
+      "variant": "mixed",
+      "tests": " tools उसी के साथ रखे हैं."
+    },
+    "MAN-04": {
+      "text": "Regenerative braking ko level 2 pe rakhna better hai city mein.",
+      "category": "manual",
+      "variant": "roman",
+      "tests": "EV terminology"
+    },
+    "MAN-05": {
+      "text": "ABS aur ESP dono active hain.",
+      "category": "manual",
+      "variant": "roman",
+      "tests": "acronyms spoken as letters"
+    },
+    "NUM-01": {
+      "text": "Abhi shaam ke 6 baj kar 45 minute hue hain.",
+      "category": "numbers",
+      "variant": "roman",
+      "tests": "time in Hindi convention"
+    },
+    "NUM-01d": {
+      "text": "अभी शाम के 6 बजकर 45 मिनट हुए हैं।",
+      "category": "numbers",
+      "variant": "devanagari",
+      "tests": "same in native script"
+    },
+    "NUM-02": {
+      "text": "Aapki EMI 12",
+      "category": "numbers",
+      "variant": "roman",
+      "tests": "345 rupaye 15 tareekh ko due hai."
+    },
+    "NUM-03": {
+      "text": "Trip meter 1",
+      "category": "numbers",
+      "variant": "mixed",
+      "tests": "04"
+    },
+    "NUM-04": {
+      "text": "Average 18 point 4 kilometre per litre hai.",
+      "category": "numbers",
+      "variant": "roman",
+      "tests": "decimal + compound unit"
+    },
+    "NUM-05": {
+      "text": "Booking reference AB 7 7 4 2 K hai.",
+      "category": "numbers",
+      "variant": "roman",
+      "tests": "alphanumeric read as characters"
+    },
+    "NUM-06": {
+      "text": "Charging 80 percent tak 35 minute lega.",
+      "category": "numbers",
+      "variant": "roman",
+      "tests": "two numbers different units"
+    },
+    "CNV-01": {
+      "text": "Haan bilkul",
+      "category": "conversational",
+      "variant": "roman",
+      "tests": " main dekh leta hoon."
+    },
+    "CNV-02": {
+      "text": "Sorry",
+      "category": "conversational",
+      "variant": "roman",
+      "tests": " main samajh nahi paaya. Phir se boliye?"
+    },
+    "CNV-03": {
+      "text": "ठीक है",
+      "category": "conversational",
+      "variant": "mixed",
+      "tests": " कर देता हूँ।"
+    },
+    "CNV-04": {
+      "text": "Aaj Bengaluru mein baarish ka chance hai",
+      "category": "conversational",
+      "variant": "roman",
+      "tests": " windows band rakhiye."
+    },
+    "CNV-05": {
+      "text": "Good morning! Kahan chalna hai aaj?",
+      "category": "conversational",
+      "variant": "roman",
+      "tests": "English greeting + Hindi question"
+    },
+    "CNV-06": {
+      "text": "Ye kaam main abhi nahi kar sakta",
+      "category": "conversational",
+      "variant": "roman",
+      "tests": " gaadi chalti hui hai."
+    },
+    "CNV-07": {
+      "text": "Bas ho gaya.",
+      "category": "conversational",
+      "variant": "roman",
+      "tests": "two-word utterance"
+    },
+    "CNV-08": {
+      "text": "Samajh gaya — navigation start कर रहा हूँ.",
+      "category": "conversational",
+      "variant": "mixed",
+      "tests": "em dash + switch"
+    },
+    "ERR-01": {
+      "text": "Network nahi mil raha",
+      "category": "errors",
+      "variant": "roman",
+      "tests": " offline mode pe chala gaya hoon."
+    },
+    "ERR-02": {
+      "text": "Yeh command samajh nahi aayi.",
+      "category": "errors",
+      "variant": "roman",
+      "tests": "short error"
+    },
+    "ERR-03": {
+      "text": "Connection टूट गया है",
+      "category": "errors",
+      "variant": "mixed",
+      "tests": " दोबारा try कीजिए."
+    },
+    "ERR-04": {
+      "text": "Safety ke liye ye driving ke dauraan available nahi hai.",
+      "category": "errors",
+      "variant": "roman",
+      "tests": "safety refusal"
+    },
+    "PHN-01": {
+      "text": "Priya ko call kar raha hoon.",
+      "category": "phone",
+      "variant": "roman",
+      "tests": "Indian first name"
+    },
+    "PHN-02": {
+      "text": "Rajesh Kumar Sharma ka number save kiya hai.",
+      "category": "phone",
+      "variant": "roman",
+      "tests": "full Indian name"
+    },
+    "PHN-03": {
+      "text": "Missed call hai Amma se",
+      "category": "phone",
+      "variant": "roman",
+      "tests": " 20 minute pehle."
+    },
+    "PHN-04": {
+      "text": "Message भेज दिया है.",
+      "category": "phone",
+      "variant": "mixed",
+      "tests": "short mixed"
+    },
+    "LNG-01": {
+      "text": "Aapki gaadi ka next service 3",
+      "category": "long",
+      "variant": "roman",
+      "tests": "000 kilometre ya do mahine mein due hai"
+    },
+    "LNG-02": {
+      "text": "Route पे तीन toll plazas हैं और कुल toll लगभग 240 rupaye होगा. FASTag balance sufficient है",
+      "category": "long",
+      "variant": "mixed",
+      "tests": " इसलिए कोई issue नहीं आएगा."
+    },
+    "LNG-03": {
+      "text": "Regenerative braking ka matlab hai ki jab aap accelerator chhodte hain",
+      "category": "long",
+      "variant": "roman",
+      "tests": " motor generator ki tarah kaam karta hai aur battery ko thodi charge wapas deta hai."
+    },
+    "EDG-05": {
+      "text": "Hmm... theek hai.",
+      "category": "edge",
+      "variant": "roman",
+      "tests": "ellipsis + hesitation"
+    },
+    "EDG-01": {
+      "text": "Toh?",
+      "category": "edge",
+      "variant": "roman",
+      "tests": "single word question"
+    },
+    "EDG-02": {
+      "text": "OK.",
+      "category": "edge",
+      "variant": "roman",
+      "tests": "single English token"
+    },
+    "EDG-03": {
+      "text": "हाँ।",
+      "category": "edge",
+      "variant": "devanagari",
+      "tests": "single Hindi token"
+    },
+    "EDG-04": {
+      "text": "22.5",
+      "category": "edge",
+      "variant": "roman",
+      "tests": "bare number with decimal"
+    },
+    "EDG-06": {
+      "text": "Kya aapne kaha 'window kholo' ya 'window band karo'?",
+      "category": "edge",
+      "variant": "roman",
+      "tests": "nested quotes + disjunction"
+    }
+  },
+  "renders": [
+    {
+      "id": "CLI-01",
+      "provider": "sarvam",
+      "voice": "priya",
+      "path": "sarvam/priya/CLI-01.wav",
+      "ttfa_ms": 1094.5
+    },
+    {
+      "id": "CLI-01d",
+      "provider": "sarvam",
+      "voice": "priya",
+      "path": "sarvam/priya/CLI-01d.wav",
+      "ttfa_ms": 1005.6
+    },
+    {
+      "id": "CLI-02",
+      "provider": "sarvam",
+      "voice": "priya",
+      "path": "sarvam/priya/CLI-02.wav",
+      "ttfa_ms": 977.0
+    },
+    {
+      "id": "CLI-01",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/CLI-01.wav",
+      "ttfa_ms": 1140.7
+    },
+    {
+      "id": "CLI-01d",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/CLI-01d.wav",
+      "ttfa_ms": 1016.2
+    },
+    {
+      "id": "CLI-02",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/CLI-02.wav",
+      "ttfa_ms": 807.1
+    },
+    {
+      "id": "CLI-02d",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/CLI-02d.wav",
+      "ttfa_ms": 1277.8
+    },
+    {
+      "id": "CLI-03",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/CLI-03.wav",
+      "ttfa_ms": 1117.8
+    },
+    {
+      "id": "CLI-04",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/CLI-04.wav",
+      "ttfa_ms": 1046.5
+    },
+    {
+      "id": "CLI-05",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/CLI-05.wav",
+      "ttfa_ms": 1088.8
+    },
+    {
+      "id": "WIN-01",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/WIN-01.wav",
+      "ttfa_ms": 700.8
+    },
+    {
+      "id": "WIN-01d",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/WIN-01d.wav",
+      "ttfa_ms": 904.6
+    },
+    {
+      "id": "WIN-02",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/WIN-02.wav",
+      "ttfa_ms": 787.4
+    },
+    {
+      "id": "WIN-03",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/WIN-03.wav",
+      "ttfa_ms": 887.6
+    },
+    {
+      "id": "WIN-04",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/WIN-04.wav",
+      "ttfa_ms": 934.1
+    },
+    {
+      "id": "NAV-01",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/NAV-01.wav",
+      "ttfa_ms": 1028.8
+    },
+    {
+      "id": "NAV-01d",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/NAV-01d.wav",
+      "ttfa_ms": 1164.4
+    },
+    {
+      "id": "NAV-02",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/NAV-02.wav",
+      "ttfa_ms": 891.4
+    },
+    {
+      "id": "NAV-03",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/NAV-03.wav",
+      "ttfa_ms": 1168.3
+    },
+    {
+      "id": "NAV-04",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/NAV-04.wav",
+      "ttfa_ms": 859.5
+    },
+    {
+      "id": "NAV-05",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/NAV-05.wav",
+      "ttfa_ms": 1127.8
+    },
+    {
+      "id": "NAV-06",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/NAV-06.wav",
+      "ttfa_ms": 664.8
+    },
+    {
+      "id": "NAV-07",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/NAV-07.wav",
+      "ttfa_ms": 1312.6
+    },
+    {
+      "id": "NAV-08",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/NAV-08.wav",
+      "ttfa_ms": 1233.4
+    },
+    {
+      "id": "MED-01",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/MED-01.wav",
+      "ttfa_ms": 863.0
+    },
+    {
+      "id": "MED-02",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/MED-02.wav",
+      "ttfa_ms": 637.0
+    },
+    {
+      "id": "MED-03",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/MED-03.wav",
+      "ttfa_ms": 1635.7
+    },
+    {
+      "id": "MED-04",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/MED-04.wav",
+      "ttfa_ms": 1007.8
+    },
+    {
+      "id": "MED-05",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/MED-05.wav",
+      "ttfa_ms": 1074.2
+    },
+    {
+      "id": "VEH-01",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/VEH-01.wav",
+      "ttfa_ms": 1484.0
+    },
+    {
+      "id": "VEH-02",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/VEH-02.wav",
+      "ttfa_ms": 1011.8
+    },
+    {
+      "id": "VEH-03",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/VEH-03.wav",
+      "ttfa_ms": 717.4
+    },
+    {
+      "id": "VEH-04",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/VEH-04.wav",
+      "ttfa_ms": 791.4
+    },
+    {
+      "id": "VEH-05",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/VEH-05.wav",
+      "ttfa_ms": 672.6
+    },
+    {
+      "id": "VEH-06",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/VEH-06.wav",
+      "ttfa_ms": 973.5
+    },
+    {
+      "id": "MAN-01",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/MAN-01.wav",
+      "ttfa_ms": 654.9
+    },
+    {
+      "id": "MAN-02",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/MAN-02.wav",
+      "ttfa_ms": 1183.0
+    },
+    {
+      "id": "MAN-03",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/MAN-03.wav",
+      "ttfa_ms": 848.4
+    },
+    {
+      "id": "MAN-04",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/MAN-04.wav",
+      "ttfa_ms": 1138.8
+    },
+    {
+      "id": "MAN-05",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/MAN-05.wav",
+      "ttfa_ms": 860.5
+    },
+    {
+      "id": "NUM-01",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/NUM-01.wav",
+      "ttfa_ms": 1066.3
+    },
+    {
+      "id": "NUM-01d",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/NUM-01d.wav",
+      "ttfa_ms": 1068.6
+    },
+    {
+      "id": "NUM-02",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/NUM-02.wav",
+      "ttfa_ms": 638.9
+    },
+    {
+      "id": "NUM-03",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/NUM-03.wav",
+      "ttfa_ms": 588.4
+    },
+    {
+      "id": "NUM-04",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/NUM-04.wav",
+      "ttfa_ms": 973.6
+    },
+    {
+      "id": "NUM-05",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/NUM-05.wav",
+      "ttfa_ms": 1015.1
+    },
+    {
+      "id": "NUM-06",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/NUM-06.wav",
+      "ttfa_ms": 1202.1
+    },
+    {
+      "id": "CNV-01",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/CNV-01.wav",
+      "ttfa_ms": 698.7
+    },
+    {
+      "id": "CNV-02",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/CNV-02.wav",
+      "ttfa_ms": 522.5
+    },
+    {
+      "id": "CNV-03",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/CNV-03.wav",
+      "ttfa_ms": 424.0
+    },
+    {
+      "id": "CNV-04",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/CNV-04.wav",
+      "ttfa_ms": 781.8
+    },
+    {
+      "id": "CNV-05",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/CNV-05.wav",
+      "ttfa_ms": 747.0
+    },
+    {
+      "id": "CNV-06",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/CNV-06.wav",
+      "ttfa_ms": 829.1
+    },
+    {
+      "id": "CNV-07",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/CNV-07.wav",
+      "ttfa_ms": 493.2
+    },
+    {
+      "id": "CNV-08",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/CNV-08.wav",
+      "ttfa_ms": 908.6
+    },
+    {
+      "id": "ERR-01",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/ERR-01.wav",
+      "ttfa_ms": 603.9
+    },
+    {
+      "id": "ERR-02",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/ERR-02.wav",
+      "ttfa_ms": 648.3
+    },
+    {
+      "id": "ERR-03",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/ERR-03.wav",
+      "ttfa_ms": 892.6
+    },
+    {
+      "id": "ERR-04",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/ERR-04.wav",
+      "ttfa_ms": 1028.3
+    },
+    {
+      "id": "PHN-01",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/PHN-01.wav",
+      "ttfa_ms": 553.1
+    },
+    {
+      "id": "PHN-02",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/PHN-02.wav",
+      "ttfa_ms": 978.0
+    },
+    {
+      "id": "PHN-03",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/PHN-03.wav",
+      "ttfa_ms": 613.7
+    },
+    {
+      "id": "PHN-04",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/PHN-04.wav",
+      "ttfa_ms": 539.2
+    },
+    {
+      "id": "LNG-01",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/LNG-01.wav",
+      "ttfa_ms": 673.6
+    },
+    {
+      "id": "LNG-02",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/LNG-02.wav",
+      "ttfa_ms": 1831.4
+    },
+    {
+      "id": "LNG-03",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/LNG-03.wav",
+      "ttfa_ms": 1078.6
+    },
+    {
+      "id": "EDG-05",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/EDG-05.wav",
+      "ttfa_ms": 951.5
+    },
+    {
+      "id": "EDG-01",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/EDG-01.wav",
+      "ttfa_ms": 803.5
+    },
+    {
+      "id": "EDG-02",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/EDG-02.wav",
+      "ttfa_ms": 474.1
+    },
+    {
+      "id": "EDG-03",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/EDG-03.wav",
+      "ttfa_ms": 562.7
+    },
+    {
+      "id": "EDG-04",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/EDG-04.wav",
+      "ttfa_ms": 651.2
+    },
+    {
+      "id": "EDG-06",
+      "provider": "sarvam",
+      "voice": "shubh",
+      "path": "sarvam/shubh/EDG-06.wav",
+      "ttfa_ms": 948.9
+    },
+    {
+      "id": "CLI-01",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/CLI-01.wav",
+      "ttfa_ms": 938.4
+    },
+    {
+      "id": "CLI-01d",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/CLI-01d.wav",
+      "ttfa_ms": 557.3
+    },
+    {
+      "id": "CLI-02",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/CLI-02.wav",
+      "ttfa_ms": 629.4
+    },
+    {
+      "id": "CLI-02d",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/CLI-02d.wav",
+      "ttfa_ms": 857.3
+    },
+    {
+      "id": "CLI-03",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/CLI-03.wav",
+      "ttfa_ms": 612.7
+    },
+    {
+      "id": "CLI-04",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/CLI-04.wav",
+      "ttfa_ms": 921.6
+    },
+    {
+      "id": "CLI-05",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/CLI-05.wav",
+      "ttfa_ms": 841.6
+    },
+    {
+      "id": "WIN-01",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/WIN-01.wav",
+      "ttfa_ms": 682.2
+    },
+    {
+      "id": "WIN-01d",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/WIN-01d.wav",
+      "ttfa_ms": 585.3
+    },
+    {
+      "id": "WIN-02",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/WIN-02.wav",
+      "ttfa_ms": 591.5
+    },
+    {
+      "id": "WIN-03",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/WIN-03.wav",
+      "ttfa_ms": 933.7
+    },
+    {
+      "id": "WIN-04",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/WIN-04.wav",
+      "ttfa_ms": 537.9
+    },
+    {
+      "id": "NAV-01",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/NAV-01.wav",
+      "ttfa_ms": 595.4
+    },
+    {
+      "id": "NAV-01d",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/NAV-01d.wav",
+      "ttfa_ms": 855.4
+    },
+    {
+      "id": "NAV-02",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/NAV-02.wav",
+      "ttfa_ms": 674.1
+    },
+    {
+      "id": "NAV-03",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/NAV-03.wav",
+      "ttfa_ms": 730.0
+    },
+    {
+      "id": "NAV-04",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/NAV-04.wav",
+      "ttfa_ms": 656.4
+    },
+    {
+      "id": "NAV-05",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/NAV-05.wav",
+      "ttfa_ms": 1044.4
+    },
+    {
+      "id": "NAV-06",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/NAV-06.wav",
+      "ttfa_ms": 591.1
+    },
+    {
+      "id": "NAV-07",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/NAV-07.wav",
+      "ttfa_ms": 671.1
+    },
+    {
+      "id": "NAV-08",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/NAV-08.wav",
+      "ttfa_ms": 729.7
+    },
+    {
+      "id": "MED-01",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/MED-01.wav",
+      "ttfa_ms": 652.7
+    },
+    {
+      "id": "MED-02",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/MED-02.wav",
+      "ttfa_ms": 609.4
+    },
+    {
+      "id": "MED-03",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/MED-03.wav",
+      "ttfa_ms": 835.4
+    },
+    {
+      "id": "MED-04",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/MED-04.wav",
+      "ttfa_ms": 986.1
+    },
+    {
+      "id": "MED-05",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/MED-05.wav",
+      "ttfa_ms": 926.5
+    },
+    {
+      "id": "VEH-01",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/VEH-01.wav",
+      "ttfa_ms": 1115.1
+    },
+    {
+      "id": "VEH-02",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/VEH-02.wav",
+      "ttfa_ms": 571.7
+    },
+    {
+      "id": "VEH-03",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/VEH-03.wav",
+      "ttfa_ms": 690.8
+    },
+    {
+      "id": "VEH-04",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/VEH-04.wav",
+      "ttfa_ms": 685.7
+    },
+    {
+      "id": "VEH-05",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/VEH-05.wav",
+      "ttfa_ms": 511.0
+    },
+    {
+      "id": "VEH-06",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/VEH-06.wav",
+      "ttfa_ms": 813.1
+    },
+    {
+      "id": "MAN-01",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/MAN-01.wav",
+      "ttfa_ms": 590.8
+    },
+    {
+      "id": "MAN-02",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/MAN-02.wav",
+      "ttfa_ms": 1222.0
+    },
+    {
+      "id": "MAN-03",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/MAN-03.wav",
+      "ttfa_ms": 595.3
+    },
+    {
+      "id": "MAN-04",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/MAN-04.wav",
+      "ttfa_ms": 900.2
+    },
+    {
+      "id": "MAN-05",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/MAN-05.wav",
+      "ttfa_ms": 717.8
+    },
+    {
+      "id": "NUM-01",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/NUM-01.wav",
+      "ttfa_ms": 680.1
+    },
+    {
+      "id": "NUM-01d",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/NUM-01d.wav",
+      "ttfa_ms": 794.9
+    },
+    {
+      "id": "NUM-02",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/NUM-02.wav",
+      "ttfa_ms": 479.2
+    },
+    {
+      "id": "NUM-03",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/NUM-03.wav",
+      "ttfa_ms": 436.7
+    },
+    {
+      "id": "NUM-04",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/NUM-04.wav",
+      "ttfa_ms": 600.8
+    },
+    {
+      "id": "NUM-05",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/NUM-05.wav",
+      "ttfa_ms": 732.9
+    },
+    {
+      "id": "NUM-06",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/NUM-06.wav",
+      "ttfa_ms": 834.0
+    },
+    {
+      "id": "CNV-01",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/CNV-01.wav",
+      "ttfa_ms": 510.4
+    },
+    {
+      "id": "CNV-02",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/CNV-02.wav",
+      "ttfa_ms": 445.2
+    },
+    {
+      "id": "CNV-03",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/CNV-03.wav",
+      "ttfa_ms": 363.3
+    },
+    {
+      "id": "CNV-04",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/CNV-04.wav",
+      "ttfa_ms": 704.0
+    },
+    {
+      "id": "CNV-05",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/CNV-05.wav",
+      "ttfa_ms": 632.0
+    },
+    {
+      "id": "CNV-06",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/CNV-06.wav",
+      "ttfa_ms": 702.7
+    },
+    {
+      "id": "CNV-07",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/CNV-07.wav",
+      "ttfa_ms": 504.0
+    },
+    {
+      "id": "CNV-08",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/CNV-08.wav",
+      "ttfa_ms": 522.3
+    },
+    {
+      "id": "ERR-01",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/ERR-01.wav",
+      "ttfa_ms": 490.4
+    },
+    {
+      "id": "ERR-02",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/ERR-02.wav",
+      "ttfa_ms": 544.3
+    },
+    {
+      "id": "ERR-03",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/ERR-03.wav",
+      "ttfa_ms": 468.6
+    },
+    {
+      "id": "ERR-04",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/ERR-04.wav",
+      "ttfa_ms": 861.2
+    },
+    {
+      "id": "PHN-01",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/PHN-01.wav",
+      "ttfa_ms": 551.4
+    },
+    {
+      "id": "PHN-02",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/PHN-02.wav",
+      "ttfa_ms": 690.1
+    },
+    {
+      "id": "PHN-03",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/PHN-03.wav",
+      "ttfa_ms": 639.1
+    },
+    {
+      "id": "PHN-04",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/PHN-04.wav",
+      "ttfa_ms": 559.6
+    },
+    {
+      "id": "LNG-01",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/LNG-01.wav",
+      "ttfa_ms": 649.3
+    },
+    {
+      "id": "LNG-02",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/LNG-02.wav",
+      "ttfa_ms": 1571.2
+    },
+    {
+      "id": "LNG-03",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/LNG-03.wav",
+      "ttfa_ms": 879.4
+    },
+    {
+      "id": "EDG-01",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/EDG-01.wav",
+      "ttfa_ms": 501.8
+    },
+    {
+      "id": "EDG-02",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/EDG-02.wav",
+      "ttfa_ms": 373.9
+    },
+    {
+      "id": "EDG-03",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/EDG-03.wav",
+      "ttfa_ms": 367.4
+    },
+    {
+      "id": "EDG-04",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/EDG-04.wav",
+      "ttfa_ms": 559.1
+    },
+    {
+      "id": "EDG-05",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/EDG-05.wav",
+      "ttfa_ms": 866.7
+    },
+    {
+      "id": "EDG-06",
+      "provider": "smallest",
+      "voice": "meher",
+      "path": "smallest/meher/EDG-06.wav",
+      "ttfa_ms": 814.6
+    }
+  ]
+}

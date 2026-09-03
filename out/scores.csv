@@ -1,73 +1,212 @@
 id,provider,voice,category,variant,ttfa_ms,reference,heard,cer
-CLI-01,sarvam,priya,climate,roman,1094.5,AC ko 22 degree pe set kar diya hai.,AC को 22 दिग्री पे सेट कर दिया है।,0.1176
-CLI-01d,sarvam,priya,climate,devanagari,1005.6,एसी को 22 डिग्री पे सेट कर दिया है।,AC को 22 दिग्री पे सेट कर दिया हैं.,0.1081
-CLI-02,sarvam,priya,climate,roman,977.0,Fan speed teen kar raha hoon.,Fine Speed 3 कर रहा हूं,0.32
-CLI-01,sarvam,shubh,climate,roman,1140.7,AC ko 22 degree pe set kar diya hai.,AC को 22 दिग्री पे सेट कर दिया है।,0.1176
-CLI-01d,sarvam,shubh,climate,devanagari,1016.2,एसी को 22 डिग्री पे सेट कर दिया है।,AC को 22 दिग्री पे सेट कर दिया है।,0.0811
-CLI-02,sarvam,shubh,climate,roman,807.1,Fan speed teen kar raha hoon.,FanSpeed 3 कर रहा हूं।,0.28
-CLI-02d,sarvam,shubh,climate,devanagari,1277.8,फैन स्पीड तीन कर रहा हूँ।,फान्स्पीर्ट दीन कर रहा हूं।,0.25
-CLI-03,sarvam,shubh,climate,mixed,1117.8,Cabin अभी 34 degrees है — cooling on कर दूँ?,"कैबिन अभी 34 दिगरीज है, खूलिंग आँ कर दूँ।",0.3409
-CLI-04,sarvam,shubh,climate,roman,1046.5,Recirculation on hai. Bahar ki hawa band hai.,"Recirculation on है, बाहर की हवलन है",0.1163
-CLI-05,sarvam,shubh,climate,roman,1088.8,Defogger chala diya. Windshield saaf ho jayega.,"दिफोगर चला दिया, विंट शीड साफ हो जाएगा",0.4091
-WIN-01,sarvam,shubh,windows,roman,700.8,Saari windows band kar di hain.,सारी विंडोज बंद कर दी हैं।,0.2759
-WIN-01d,sarvam,shubh,windows,devanagari,904.6,सारी विंडोज़ बंद कर दी हैं।,सारी विंडोज बन कर दी हैं,0.0968
-WIN-02,sarvam,shubh,windows,roman,787.4,Driver side window thoda sa khol diya.,driver side window थोड़ा सा खोल दिया,0.0541
-WIN-03,sarvam,shubh,windows,mixed,887.6,Sunroof 40 percent खुला है.,sunroof 40% खुला है,0.2963
-WIN-04,sarvam,shubh,windows,roman,934.1,Child lock on hai,चाइल लोग कोन है।,0.3529
-NAV-01,sarvam,shubh,navigation,roman,1028.8,Koramangala 4th Block tak 18 minute lagenge.,कौर्मंगला 4th ब्लॉक तक 18 मिनिट लगेंगे।,0.2558
-NAV-01d,sarvam,shubh,navigation,devanagari,1164.4,कोरमंगला फोर्थ ब्लॉक तक 18 मिनट लगेंगे।,कौर्मंग्ला 4th ब्लॉक तक 18 मिनट लगेंगे।,0.1837
-NAV-02,sarvam,shubh,navigation,roman,891.4,Outer Ring Road pe traffic heavy hai,आउटर रिंग रोड पे ट्राफिक हईवी हैं।,0.4167
-NAV-03,sarvam,shubh,navigation,roman,1168.3,Indiranagar 100 Feet Road pe pahunch gaye hain.,इम्दिलानगर 100 फीट रोट पे पहुछ गए हैं।,0.2889
-NAV-04,sarvam,shubh,navigation,mixed,859.5,अगला turn Silk Board junction पे है.,अगला टरन सिल्क बोट जंक्षन पे हैं,0.4054
-NAV-05,sarvam,shubh,navigation,roman,1127.8,Whitefield tak ka route Marathahalli se hoke jaata hai.,वाइट फीड तक का रूट मराथाली से हूपे जाता है।,0.3019
-NAV-06,sarvam,shubh,navigation,roman,664.8,Aap Jayanagar 9th Block mein hain.,आप जायनगर नाइन्त ब्लॉक में हैं,0.4062
-NAV-07,sarvam,shubh,navigation,roman,1312.6,Yeh route toll-free hai lekin 12 kilometre lamba hai.,ये रूट तोल फ्री है लेकिन बारा किलोमेटर लंबा है,0.2745
-NAV-08,sarvam,shubh,navigation,roman,1233.4,Nearest petrol pump 2 point 3 kilometre door hai.,Nearest petrol pump 2.3 km दूर है,0.3191
-MED-01,sarvam,shubh,media,roman,863.0,Arijit Singh ka gaana chala raha hoon.,अरिजीट सिंग का गाना चला रहा हो।,0.1143
-MED-02,sarvam,shubh,media,roman,637.0,Volume 60 percent kar diya.,वाल्यूम 60% कर दिया,0.4615
-MED-03,sarvam,shubh,media,mixed,1635.7,Playlist में 24 songs हैं.,Playlist में 24 songs है,0.0385
-MED-04,sarvam,shubh,media,roman,1007.8,Bluetooth se connect ho gaya. Ab music play kar sakte hain.,"Bluetooth से connect हो गया, अब music प्ले कर सकते हैं",0.1071
-MED-05,sarvam,shubh,media,roman,1074.2,FM 93.5 Red FM laga diya.,fm 93.568 fm लगा दिया,0.1667
-VEH-01,sarvam,shubh,status,roman,1484.0,Fuel 24 percent hai — lagbhag 180 kilometre chal jayega.,"फ्यूल 24% है, लगभभ 180 किलोमेटर चल जाएगा",0.3962
-VEH-02,sarvam,shubh,status,roman,1011.8,Tyre pressure front left mein thoda kam hai.,ताइर प्रेशर फरंट लेफ्ट में थोड़ा कम है,0.4419
-VEH-03,sarvam,shubh,status,mixed,717.4,Battery 78% चार्ज है.,बैटरी 78% चाज है।,0.1905
-VEH-04,sarvam,shubh,status,roman,791.4,Service due hai. 1,सर्वस्दू हैं,0.4706
-VEH-05,sarvam,shubh,status,roman,672.6,Engine temperature normal hai.,इंजिम टेमप्रेछर नॉर्मल है।,0.5172
-VEH-06,sarvam,shubh,status,roman,973.5,Seatbelt rear right mein nahi laga hai.,सीट बेल्ट रियर राइट में नहीं लगा है,0.3684
-MAN-01,sarvam,shubh,manual,roman,654.9,Owner's manual ke hisaab se,Owners Manual के हसाथ से,0.1923
-MAN-02,sarvam,shubh,manual,roman,1183.0,Yeh warning light low oil pressure batata hai. Gaadi rok dijiye.,"ये वार्निंग लाइट लो अयल प्रेशर बटाटा है, गाड़ी रोब दीजिए",0.3279
-MAN-03,sarvam,shubh,manual,mixed,848.4,Spare tyre बूट के नीचे है,स्पेर टायर बूट के निचे है,0.1786
-MAN-04,sarvam,shubh,manual,roman,1138.8,Regenerative braking ko level 2 pe rakhna better hai city mein.,"Regenerative Breaking को Level 2 पे रखना बेटर है, City में",0.1129
-MAN-05,sarvam,shubh,manual,roman,860.5,ABS aur ESP dono active hain.,ABS और ESP दोनो आक्टिव हैं,0.1429
-NUM-01,sarvam,shubh,numbers,roman,1066.3,Abhi shaam ke 6 baj kar 45 minute hue hain.,अभी शाम के 6 बचका 45 मिनिट हुए हैं,0.1951
-NUM-01d,sarvam,shubh,numbers,devanagari,1068.6,अभी शाम के 6 बजकर 45 मिनट हुए हैं।,अभी शाम के 6 बचकर 45 मिनट हुए हैं,0.0465
-NUM-02,sarvam,shubh,numbers,roman,638.9,Aapki EMI 12,आपकी ये माई बराज।,0.9091
-NUM-03,sarvam,shubh,numbers,mixed,588.4,Trip meter 1,तुप्मितर इट।,0.75
-NUM-04,sarvam,shubh,numbers,roman,973.6,Average 18 point 4 kilometre per litre hai.,अवरेज 18.4 किलोमेटर पर लिटर है।,0.381
-NUM-05,sarvam,shubh,numbers,roman,1015.1,Booking reference AB 7 7 4 2 K hai.,बुकिंग रेफरंस एबी 7 7 4 2 के हैं,0.4242
-NUM-06,sarvam,shubh,numbers,roman,1202.1,Charging 80 percent tak 35 minute lega.,चार्जिंग 80% तक 35 मिनिट लेगा।,0.3684
-CNV-01,sarvam,shubh,conversational,roman,698.7,Haan bilkul,हाँ बिल्कुल।,0.2
-CNV-02,sarvam,shubh,conversational,roman,522.5,Sorry,सोरी,0.4
-CNV-03,sarvam,shubh,conversational,mixed,424.0,ठीक है,तीके,0.6667
-CNV-04,sarvam,shubh,conversational,roman,781.8,Aaj Bengaluru mein baarish ka chance hai,आज बेंगलूरू में बारिश का चान्स है?,0.1842
-CNV-05,sarvam,shubh,conversational,roman,747.0,Good morning! Kahan chalna hai aaj?,गुद मौनिंग। कहां चलना है आज।,0.2903
-CNV-06,sarvam,shubh,conversational,roman,829.1,Ye kaam main abhi nahi kar sakta,ये काम मैं अभी नहीं कर सकता।,0.1613
-CNV-07,sarvam,shubh,conversational,roman,493.2,Bas ho gaya.,बस हो गया।,0.0909
-CNV-08,sarvam,shubh,conversational,mixed,908.6,Samajh gaya — navigation start कर रहा हूँ.,समझज़ग्या  नाविगेशन स्टाट कर रहा हूं,0.2791
-ERR-01,sarvam,shubh,errors,roman,603.9,Network nahi mil raha,नेटोट नहीं मिल रहा।,0.2381
-ERR-02,sarvam,shubh,errors,roman,648.3,Yeh command samajh nahi aayi.,ये कमांट समझने आई,0.4444
-ERR-03,sarvam,shubh,errors,mixed,892.6,Connection टूट गया है,connection तोड़ जा है।,0.25
-ERR-04,sarvam,shubh,errors,roman,1028.3,Safety ke liye ye driving ke dauraan available nahi hai.,सेफ्टी के लिए द्राइविंग के दौरान अवेलेबल नहीं है।,0.3333
-PHN-01,sarvam,shubh,phone,roman,553.1,Priya ko call kar raha hoon.,प्रिया को काल कर रहा हूं।,0.1923
-PHN-02,sarvam,shubh,phone,roman,978.0,Rajesh Kumar Sharma ka number save kiya hai.,राजेश कुमार शर्मा का नम्वा सेव किया है।,0.186
-PHN-03,sarvam,shubh,phone,roman,613.7,Missed call hai Amma se,missed call हैं अम्मा से,0.0435
-PHN-04,sarvam,shubh,phone,mixed,539.2,Message भेज दिया है.,मेसेज भीज दिया है।,0.2273
-LNG-01,sarvam,shubh,long,roman,673.6,Aapki gaadi ka next service 3,आपकी गाड़ी का नेक्स सर्वस तीन।,0.4815
-LNG-02,sarvam,shubh,long,mixed,1831.4,Route पे तीन toll plazas हैं और कुल toll लगभग 240 rupaye होगा. FASTag balance sufficient है,रूट पे तीम तोल प्लाजास हैं और कुल तोल लगभा 240 रूपे होगा.  FAS TAG BALANCE सविषियंट हैं.,0.2178
-LNG-03,sarvam,shubh,long,roman,1078.6,Regenerative braking ka matlab hai ki jab aap accelerator chhodte hain,Regenerative Braking का मतलब है कि जब आप Accelerator चोरते हैं,0.1159
-EDG-05,sarvam,shubh,edge,roman,951.5,Hmm... theek hai.,तीके।,0.8333
-EDG-01,sarvam,shubh,edge,roman,803.5,Toh?,तूू।,0.6667
-EDG-02,sarvam,shubh,edge,roman,474.1,OK.,Okay,1.0
-EDG-03,sarvam,shubh,edge,devanagari,562.7,हाँ।,हाँ,0.0
-EDG-04,sarvam,shubh,edge,roman,651.2,22.5,भाईस्पॉंट पाच।,4.0
-EDG-06,sarvam,shubh,edge,roman,948.9,Kya aapne kaha 'window kholo' ya 'window band karo'?,क्या आपने कहा विंडो खोलो या विंडो बैंड करो?,0.2174
+CLI-01,sarvam,shubh,climate,roman,452.4,AC ko 22 degree pe set kar diya hai.,AC को 22 दिग्री पे सेट कर दिया हैं.,0.1471
+CLI-01,smallest,meher,climate,roman,0.0,AC ko 22 degree pe set kar diya hai.,AC को 22 दिग्री पे सेट कर दिया है।,0.1176
+CLI-01,smallest,meher,climate,roman,0.0,AC ko 22 degree pe set kar diya hai.,AC को 22 दिग्री पे सेट कर दिया है।,0.1176
+CLI-01,smallest,meher,climate,roman,0.0,AC ko 22 degree pe set kar diya hai.,AC को 22 दिग्री पे सेट कर दिया है।,0.1176
+CLI-01,smallest,meher,climate,roman,336.2,AC ko 22 degree pe set kar diya hai.,AC को 22 दिग्री पे सेट कर दिया है।,0.1176
+CLI-01,sarvam,shubh,climate,roman,692.7,AC ko 22 degree pe set kar diya hai.,AC को 22 दिग्री पे सेट कर दिया हैं.,0.1471
+CLI-01d,sarvam,shubh,climate,devanagari,849.7,एसी को 22 डिग्री पे सेट कर दिया है।,AC को 22 दिग्री पे सेट कर दिया हैं.,0.1081
+CLI-02,sarvam,shubh,climate,roman,473.2,Fan speed teen kar raha hoon.,Fan speed 3 कर रहा हूं,0.24
+CLI-02d,sarvam,shubh,climate,devanagari,610.0,फैन स्पीड तीन कर रहा हूँ।,फान्स भीर्ट दीम रहा हूं।,0.4375
+CLI-03,sarvam,shubh,climate,mixed,860.5,Cabin अभी 34 degrees है — cooling on कर दूँ?,"क्या बेन अभी 24 दिग्रीज है, खूलिंग आउगर दूँ?",0.4318
+CLI-04,sarvam,shubh,climate,roman,374.8,Recirculation on hai. Bahar ki hawa band hai.,"Recirculation on है, बहार की हवा बंद है।",0.093
+CLI-05,sarvam,shubh,climate,roman,468.1,Defogger chala diya. Windshield saaf ho jayega.,दिफोगर चला दिया विन्शीड साफ हुजाएगा,0.3864
+WIN-01,sarvam,shubh,windows,roman,434.4,Saari windows band kar di hain.,सारी विंडोज बन कर दी हैं,0.2414
+WIN-01d,sarvam,shubh,windows,devanagari,522.8,सारी विंडोज़ बंद कर दी हैं।,सारी विंडोस बन कर दी हैं,0.0968
+WIN-02,sarvam,shubh,windows,roman,358.3,Driver side window thoda sa khol diya.,driver side window थोड़ासा खोल दिया,0.0811
+WIN-03,sarvam,shubh,windows,mixed,960.8,Sunroof 40 percent खुला है.,sunroof 40% खुला हैं,0.3333
+WIN-04,sarvam,shubh,windows,roman,385.9,Child lock on hai,चाइल लोग काण हैं?,0.4706
+NAV-01,sarvam,shubh,navigation,roman,527.2,Koramangala 4th Block tak 18 minute lagenge.,कौर्मंगला 4th ब्लॉक तक 18 मिनिट लगेंगे,0.2558
+NAV-01d,sarvam,shubh,navigation,devanagari,551.9,कोरमंगला फोर्थ ब्लॉक तक 18 मिनट लगेंगे।,कुर्मंगला 4 ब्लॉक तक 18 मिनट लगेंगे,0.1837
+NAV-02,sarvam,shubh,navigation,roman,884.3,Outer Ring Road pe traffic heavy hai,आूटर रिंग रोट पे ट्राफिक है थी हैं।,0.5
+NAV-03,sarvam,shubh,navigation,roman,1020.4,Indiranagar 100 Feet Road pe pahunch gaye hain.,इंदिरानगर एक सो फीट रोट पे पहुछ गए हैं।,0.4
+NAV-04,sarvam,shubh,navigation,mixed,1233.9,अगला turn Silk Board junction पे है.,अगला टर्न सिल्ट बोट जंक्षन पे है।,0.3784
+NAV-05,sarvam,shubh,navigation,roman,483.3,Whitefield tak ka route Marathahalli se hoke jaata hai.,वाइट फिल्ड तक का रूट मराथाली से होके जाता है।,0.2642
+NAV-06,sarvam,shubh,navigation,roman,465.8,Aap Jayanagar 9th Block mein hain.,आप जायनेगर 9 ब्लॉक में हैं।,0.3438
+NAV-07,sarvam,shubh,navigation,roman,434.5,Yeh route toll-free hai lekin 12 kilometre lamba hai.,ये रूट तोल फ्री है लेकिन बारा किलोमेटर लंबा है,0.2745
+NAV-08,sarvam,shubh,navigation,roman,502.5,Nearest petrol pump 2 point 3 kilometre door hai.,Nearest petrol pump 2.3 km दोर है,0.2979
+MED-01,sarvam,shubh,media,roman,393.2,Arijit Singh ka gaana chala raha hoon.,अरिजीत सिंग का गाना चला रहा हूं।,0.1429
+MED-02,sarvam,shubh,media,roman,623.0,Volume 60 percent kar diya.,वाल्यूम साट परसंट कर दिया,0.5385
+MED-03,sarvam,shubh,media,mixed,526.0,Playlist में 24 songs हैं.,प्लेलिस्ट में 24 सांग्स हैं,0.2308
+MED-04,sarvam,shubh,media,roman,499.6,Bluetooth se connect ho gaya. Ab music play kar sakte hain.,"ब्लूटूट से कनेट हो गया, अब मिजिक प्ले कर सकते हैं.",0.3214
+MED-05,sarvam,shubh,media,roman,473.7,FM 93.5 Red FM laga diya.,FM 93.5 Red FM लगा दिया।,0.0
+VEH-01,sarvam,shubh,status,roman,529.5,Fuel 24 percent hai — lagbhag 180 kilometre chal jayega.,"फ्यूल 24% है, लगबर 180 किलोमेटर चल जाएगा।",0.3962
+VEH-02,sarvam,shubh,status,roman,470.5,Tyre pressure front left mein thoda kam hai.,tire pressure front left में थोड़ा कम है,0.1163
+VEH-03,sarvam,shubh,status,mixed,588.5,Battery 78% चार्ज है.,बैटरी 78% चाज है।,0.1905
+VEH-04,sarvam,shubh,status,roman,2555.6,Service due hai. 1,सर्वेज द्यू है।,0.4706
+VEH-05,sarvam,shubh,status,roman,2284.5,Engine temperature normal hai.,अंजिन टेमप्रेज़र नार्मल है।,0.4138
+VEH-06,sarvam,shubh,status,roman,1286.4,Seatbelt rear right mein nahi laga hai.,सीट बेल्ट रियर राइट में नहीं लगा है,0.3684
+MAN-01,sarvam,shubh,manual,roman,420.3,Owner's manual ke hisaab se,Owners manual के हसाब से,0.1154
+MAN-02,sarvam,shubh,manual,roman,879.1,Yeh warning light low oil pressure batata hai. Gaadi rok dijiye.,ये वार्निंग लाइट लो आईल प्रेशर बटाता है। गाड़ी रोग दिजिये।,0.2787
+MAN-03,sarvam,shubh,manual,mixed,425.0,Spare tyre बूट के नीचे है,SPARE TYPE BOOT के नीचे हैं,0.1429
+MAN-04,sarvam,shubh,manual,roman,3105.4,Regenerative braking ko level 2 pe rakhna better hai city mein.,रीजेनरेटिव ब्रेकिंग को लेवदो पे रखना बेटर है सिटी में,0.3226
+MAN-05,sarvam,shubh,manual,roman,460.9,ABS aur ESP dono active hain.,ABS और ESP दोनो आक्टिव हैं।,0.1429
+NUM-01,sarvam,shubh,numbers,roman,607.5,Abhi shaam ke 6 baj kar 45 minute hue hain.,अभी शाम के 6 बाजकर 45 मिनिट हुए हैं।,0.1463
+NUM-01d,sarvam,shubh,numbers,devanagari,482.7,अभी शाम के 6 बजकर 45 मिनट हुए हैं।,अभी शान के 6 बच का 45 मिनिट होए।,0.3023
+NUM-02,sarvam,shubh,numbers,roman,781.4,Aapki EMI 12,आपकी EMI 12,0.0909
+NUM-03,sarvam,shubh,numbers,mixed,2490.1,Trip meter 1,द्रिक्मेतरिक्,0.5
+NUM-04,sarvam,shubh,numbers,roman,608.6,Average 18 point 4 kilometre per litre hai.,अवरेज 18.4 किलोमेटर पर लिटर है।,0.381
+NUM-05,sarvam,shubh,numbers,roman,519.2,Booking reference AB 7 7 4 2 K hai.,बुकिंग रिफरंसे भी साथ साथ चार दोके है।,0.9394
+NUM-06,sarvam,shubh,numbers,roman,891.9,Charging 80 percent tak 35 minute lega.,चार्जिंग असी परसेंट तक पैन्पीस मिन्ट लेगा।,0.5789
+CNV-01,sarvam,shubh,conversational,roman,5559.4,Haan bilkul,हाँ बिल्कुल,0.2
+CNV-02,sarvam,shubh,conversational,roman,849.5,Sorry,सोरी,0.4
+CNV-03,sarvam,shubh,conversational,mixed,512.7,ठीक है,तीके,0.6667
+CNV-04,sarvam,shubh,conversational,roman,1033.7,Aaj Bengaluru mein baarish ka chance hai,आज बेंगलू में बारश का चान्स है।,0.2632
+CNV-05,sarvam,shubh,conversational,roman,413.4,Good morning! Kahan chalna hai aaj?,गुद मौनिंग। कहां चलना है आज?,0.2903
+CNV-06,sarvam,shubh,conversational,roman,612.0,Ye kaam main abhi nahi kar sakta,ये काम मैं अभी नहीं कर सकता।,0.1613
+CNV-07,sarvam,shubh,conversational,roman,1036.5,Bas ho gaya.,बस हो गया।,0.0909
+CNV-08,sarvam,shubh,conversational,mixed,704.1,Samajh gaya — navigation start कर रहा हूँ.,"समझजग्या, माविगेशन स्टाट कर रहा हूं",0.3023
+ERR-01,sarvam,shubh,errors,roman,361.9,Network nahi mil raha,नेट्वॉर्क नहीं मिल रहा।,0.2857
+ERR-02,sarvam,shubh,errors,roman,747.4,Yeh command samajh nahi aayi.,ये कमान समझ नहीं आई,0.2963
+ERR-03,sarvam,shubh,errors,mixed,469.8,Connection टूट गया है,connection तुड़जा है।,0.1667
+ERR-04,sarvam,shubh,errors,roman,487.3,Safety ke liye ye driving ke dauraan available nahi hai.,सिफ्टी के लिए ये ड्राइविंग के दौरान अवेलिबल नहीं है।,0.2778
+PHN-01,sarvam,shubh,phone,roman,899.8,Priya ko call kar raha hoon.,प्रिया को काल करहा हूं।,0.2308
+PHN-02,sarvam,shubh,phone,roman,571.9,Rajesh Kumar Sharma ka number save kiya hai.,राजेश कुमार शर्मा का नमबर सेव किया है।,0.186
+PHN-03,sarvam,shubh,phone,roman,504.2,Missed call hai Amma se,missed call है अम्मा से,0.0
+PHN-04,sarvam,shubh,phone,mixed,5964.3,Message भेज दिया है.,मेसेज भेज दिया है।,0.1818
+LNG-01,sarvam,shubh,long,roman,706.6,Aapki gaadi ka next service 3,आपकी गारी का नेक्स सावस टीम,0.5185
+LNG-02,sarvam,shubh,long,mixed,450.8,Route पे तीन toll plazas हैं और कुल toll लगभग 240 rupaye होगा. FASTag balance sufficient है,"रूट पे तीन तोल प्लाजास हैं, और कुल तोल लगबक 240 रूपे होगा  फास्ट आग बालन्स सविषंट हैं",0.2574
+LNG-03,sarvam,shubh,long,roman,453.1,Regenerative braking ka matlab hai ki jab aap accelerator chhodte hain,"Regenerative Braking का मतलब है कि जब आप Accelerative चोडते हैं,",0.1449
+EDG-01,sarvam,shubh,edge,roman,973.8,Toh?,तु,0.6667
+EDG-02,sarvam,shubh,edge,roman,455.5,OK.,Okay.,1.0
+EDG-03,sarvam,shubh,edge,devanagari,426.9,हाँ।,हाँ,0.0
+EDG-04,sarvam,shubh,edge,roman,570.4,22.5,भाईस्पॉंट पाच।,4.0
+EDG-05,sarvam,shubh,edge,roman,443.1,Hmm... theek hai.,हुँ। चीचे।,0.75
+EDG-06,sarvam,shubh,edge,roman,562.6,Kya aapne kaha 'window kholo' ya 'window band karo'?,क्या आपने कहा विंडो खोलो या विंडो बैंड करो?,0.2174
+CLI-01d,smallest,meher,climate,devanagari,415.1,एसी को 22 डिग्री पे सेट कर दिया है।,ऐसी को 22 दिग्री पे सेट कर दिया है।,0.0541
+CLI-02,smallest,meher,climate,roman,302.1,Fan speed teen kar raha hoon.,फान्स पीट टीन करहा हूं।,0.56
+CLI-02d,smallest,meher,climate,devanagari,519.9,फैन स्पीड तीन कर रहा हूँ।,Fan speed 3 कर रहा हूं।,0.375
+CLI-03,smallest,meher,climate,mixed,373.0,Cabin अभी 34 degrees है — cooling on कर दूँ?,"क्याबिन अभी 34 दिग्रीज है, कूलिंग आँ कर दूँ।",0.2955
+CLI-04,smallest,meher,climate,roman,333.3,Recirculation on hai. Bahar ki hawa band hai.,"Recirculation on है, बहार की हवा बैंड है",0.1163
+CLI-05,smallest,meher,climate,roman,1608.7,Defogger chala diya. Windshield saaf ho jayega.,DeafFogger चला दिया विंशील साफ हो जाएगा,0.25
+WIN-01,smallest,meher,windows,roman,490.9,Saari windows band kar di hain.,सारी विन्डोस बैंड कर दी हैं।,0.2759
+WIN-01d,smallest,meher,windows,devanagari,313.5,सारी विंडोज़ बंद कर दी हैं।,सारी विंडोस बंद कर दी हैं।,0.0323
+WIN-02,smallest,meher,windows,roman,2063.4,Driver side window thoda sa khol diya.,driver side window थोड़ा सा खोल दिया,0.0541
+WIN-03,smallest,meher,windows,mixed,319.0,Sunroof 40 percent खुला है.,sunroof 40% खुला है।,0.2963
+WIN-04,smallest,meher,windows,roman,255.3,Child lock on hai,चायल लोक आन है।,0.4706
+NAV-01,smallest,meher,navigation,roman,378.2,Koramangala 4th Block tak 18 minute lagenge.,खोरमंगला 4th block तक 18 मिनिट लागिंगे,0.1628
+NAV-01d,smallest,meher,navigation,devanagari,651.8,कोरमंगला फोर्थ ब्लॉक तक 18 मिनट लगेंगे।,कोर्मंग्ला फोथ ब्लॉक तक 18 मिनिट लगेंगे।,0.0816
+NAV-02,smallest,meher,navigation,roman,255.1,Outer Ring Road pe traffic heavy hai,आूटर रिंग रोड पे ट्राफिक हेवी है।,0.3611
+NAV-03,smallest,meher,navigation,roman,275.2,Indiranagar 100 Feet Road pe pahunch gaye hain.,इंडिरानगार 100 फीट रोड पे पहुछ गये हैं।,0.2444
+NAV-04,smallest,meher,navigation,mixed,251.6,अगला turn Silk Board junction पे है.,अगला टरन सिल्क बोट जंक्षण पे है।,0.3784
+NAV-05,smallest,meher,navigation,roman,381.9,Whitefield tak ka route Marathahalli se hoke jaata hai.,वाइट फिल तक का रूट मराता हाली से होके जाता है।,0.2642
+NAV-06,smallest,meher,navigation,roman,367.0,Aap Jayanagar 9th Block mein hain.,आप जायनगा 9 प्लॉक में हैं।,0.3438
+NAV-07,smallest,meher,navigation,roman,287.1,Yeh route toll-free hai lekin 12 kilometre lamba hai.,ये हर रूट तोल फ्री है लेकिन 12 किलोमेटर लामबा है।,0.2745
+NAV-08,smallest,meher,navigation,roman,242.7,Nearest petrol pump 2 point 3 kilometre door hai.,"Nearest petrol pump, 2.3 km door है.",0.2766
+MED-01,smallest,meher,media,roman,397.6,Arijit Singh ka gaana chala raha hoon.,अरिजित सिंग का गाना चला रहा हूं।,0.1429
+MED-02,smallest,meher,media,roman,392.5,Volume 60 percent kar diya.,वाल्यूम 60% कर दिया।,0.4615
+MED-03,smallest,meher,media,mixed,272.2,Playlist में 24 songs हैं.,प्लेलिस्ट में चौभी सॉंग्स हैं।,0.5385
+MED-04,smallest,meher,media,roman,829.7,Bluetooth se connect ho gaya. Ab music play kar sakte hain.,"Bluetooth से connect हो गया, अब music प्ले कर सकते हैं.",0.1071
+MED-05,smallest,meher,media,roman,705.4,FM 93.5 Red FM laga diya.,FM 93.5 Red FM लगा दिया।,0.0
+VEH-01,smallest,meher,status,roman,345.9,Fuel 24 percent hai — lagbhag 180 kilometre chal jayega.,"फ्यूल 24% है, लगभभग 180 किलोमेटर चाल जायेगा।",0.3962
+VEH-02,smallest,meher,status,roman,568.3,Tyre pressure front left mein thoda kam hai.,Tire pressure front लेफ्ट में थोड़ा कम हैं.,0.2093
+VEH-03,smallest,meher,status,mixed,280.2,Battery 78% चार्ज है.,बाट्री 78 प्रतिशाज है।,0.4762
+VEH-04,smallest,meher,status,roman,337.8,Service due hai. 1,सर्विस द्यू है उनो।,0.4706
+VEH-05,smallest,meher,status,roman,566.6,Engine temperature normal hai.,अंजिन टेमपिच्टुर नोमल है।,0.3793
+VEH-06,smallest,meher,status,roman,371.6,Seatbelt rear right mein nahi laga hai.,सीट बेल्ट रिया राइट में नहीं लगा है।,0.3684
+MAN-01,smallest,meher,manual,roman,381.6,Owner's manual ke hisaab se,Owners Manual के हिसाब से,0.0769
+MAN-02,smallest,meher,manual,roman,262.0,Yeh warning light low oil pressure batata hai. Gaadi rok dijiye.,यह हा वाणिंग लाइट लो ओयल प्रेशर बताता है  गाडी रोग दीजिये,0.3443
+MAN-03,smallest,meher,manual,mixed,408.5,Spare tyre बूट के नीचे है,स्पेर टायर बूट के निजे है,0.25
+MAN-04,smallest,meher,manual,roman,273.5,Regenerative braking ko level 2 pe rakhna better hai city mein.,Regenerative Braking को Level 2 पे रखना बेटर है City में.,0.0968
+MAN-05,smallest,meher,manual,roman,540.1,ABS aur ESP dono active hain.,ABS और ESP दोनों आक्टिव हैं.,0.1786
+NUM-01,smallest,meher,numbers,roman,452.8,Abhi shaam ke 6 baj kar 45 minute hue hain.,अभी शाम के 6 बाजकर 45 मिनिट हूँ हैं।,0.1951
+NUM-01d,smallest,meher,numbers,devanagari,428.7,अभी शाम के 6 बजकर 45 मिनट हुए हैं।,अभी शाम के 6 बचकर 45 मिनिट हुए हैं।,0.0698
+NUM-02,smallest,meher,numbers,roman,286.0,Aapki EMI 12,आपकी EMI 12,0.0909
+NUM-03,smallest,meher,numbers,mixed,629.4,Trip meter 1,ट्रिप मीटर यूंग।,0.75
+NUM-04,smallest,meher,numbers,roman,1034.7,Average 18 point 4 kilometre per litre hai.,अवरेज दिक्स वेट पॉंट काप किलोमेतर पर लिटर है।,0.6429
+NUM-05,smallest,meher,numbers,roman,851.2,Booking reference AB 7 7 4 2 K hai.,बुकिंग रेफरंस AB774-2K है।,0.4242
+NUM-06,smallest,meher,numbers,roman,510.7,Charging 80 percent tak 35 minute lega.,चाजिंग 80% तक 35 मिनिट लेगा,0.3947
+CNV-01,smallest,meher,conversational,roman,298.7,Haan bilkul,हा बिल्कुल,0.2
+CNV-02,smallest,meher,conversational,roman,522.3,Sorry,Sorry,0.0
+CNV-03,smallest,meher,conversational,mixed,1415.3,ठीक है,चीके।,0.6667
+CNV-04,smallest,meher,conversational,roman,285.7,Aaj Bengaluru mein baarish ka chance hai,आज बैंगलोरो में बारिश का चान्स है,0.2895
+CNV-05,smallest,meher,conversational,roman,610.7,Good morning! Kahan chalna hai aaj?,गुद मौनिंग! कहाँ चलना है आज?,0.2903
+CNV-06,smallest,meher,conversational,roman,399.4,Ye kaam main abhi nahi kar sakta,ये काम मैं अभी नहीं कर सकता।,0.1613
+CNV-07,smallest,meher,conversational,roman,331.2,Bas ho gaya.,बेस हो गया।,0.1818
+CNV-08,smallest,meher,conversational,mixed,1571.1,Samajh gaya — navigation start कर रहा हूँ.,समझ गया नाविगेशन स्टाट कर रहूं।,0.3023
+ERR-01,smallest,meher,errors,roman,333.5,Network nahi mil raha,नेटवर्क नहीं मिल रहा।,0.2857
+ERR-02,smallest,meher,errors,roman,345.7,Yeh command samajh nahi aayi.,ये कमान समझ नहीं आई।,0.2963
+ERR-03,smallest,meher,errors,mixed,299.4,Connection टूट गया है,कनेक्षिन तूट गया है।,0.3333
+ERR-04,smallest,meher,errors,roman,820.3,Safety ke liye ye driving ke dauraan available nahi hai.,सेफ्टी के लिए ये द्राइविंग के दौरान अवेलेबल नहीं है।,0.2778
+PHN-01,smallest,meher,phone,roman,442.0,Priya ko call kar raha hoon.,प्रिया को काल कर रहा हूं।,0.1923
+PHN-02,smallest,meher,phone,roman,362.5,Rajesh Kumar Sharma ka number save kiya hai.,राजेश कुमार शर्मा का नंबर सेव किया है।,0.1628
+PHN-03,smallest,meher,phone,roman,1206.1,Missed call hai Amma se,Miss call है अम्मा से,0.087
+PHN-04,smallest,meher,phone,mixed,389.0,Message भेज दिया है.,मेसेज भीज दिया है।,0.2273
+LNG-01,smallest,meher,long,roman,344.0,Aapki gaadi ka next service 3,आपकी गाडी का नेक्स सर्विस त्री,0.3704
+LNG-02,smallest,meher,long,mixed,1002.9,Route पे तीन toll plazas हैं और कुल toll लगभग 240 rupaye होगा. FASTag balance sufficient है,रूट पे तीन तोल प्लाजास हैं और कुल तोल लगभभग 240 रूपाय होगा.  Fastag balance sufficient हैं.,0.1089
+LNG-03,smallest,meher,long,roman,312.8,Regenerative braking ka matlab hai ki jab aap accelerator chhodte hain,Regenerative Braking का मतलब है कि जहाँ आप Accelerator चोडते हैं.,0.1449
+EDG-01,smallest,meher,edge,roman,372.4,Toh?,तु,0.6667
+EDG-02,smallest,meher,edge,roman,275.5,OK.,Okay.,1.0
+EDG-03,smallest,meher,edge,devanagari,256.9,हाँ।,हाँ,0.0
+EDG-04,smallest,meher,edge,roman,395.7,22.5,22.5,0.0
+EDG-05,smallest,meher,edge,roman,286.3,Hmm... theek hai.,हुँ तीके।,0.75
+EDG-06,smallest,meher,edge,roman,257.8,Kya aapne kaha 'window kholo' ya 'window band karo'?,"क्या आपने कहां, विन्डो खोलो या विन्डो बान करो?",0.1522
+CLI-01,smallest,meher,climate,roman,374.9,AC ko 22 degree pe set kar diya hai.,AC को 22 दिग्री पे सेट कर दिया है।,0.1176
+CLI-01d,smallest,meher,climate,devanagari,521.5,एसी को 22 डिग्री पे सेट कर दिया है।,ऐसी को 22 दिग्री पे सेट कर दिया है।,0.0541
+CLI-02,smallest,meher,climate,roman,330.9,Fan speed teen kar raha hoon.,फान्स पीट टीन करहा हूं।,0.56
+CLI-02d,smallest,meher,climate,devanagari,373.3,फैन स्पीड तीन कर रहा हूँ।,Fan speed 3 कर रहा हूं।,0.375
+CLI-03,smallest,meher,climate,mixed,588.9,Cabin अभी 34 degrees है — cooling on कर दूँ?,"क्याबिन अभी 34 दिग्रीज है, कूलिंग आँ कर दूँ।",0.2955
+CLI-04,smallest,meher,climate,roman,395.9,Recirculation on hai. Bahar ki hawa band hai.,"Recirculation on है, बहार की हवा बैंड है",0.1163
+CLI-05,smallest,meher,climate,roman,360.4,Defogger chala diya. Windshield saaf ho jayega.,DeafFogger चला दिया विंशील साफ हो जाएगा,0.25
+WIN-01,smallest,meher,windows,roman,339.5,Saari windows band kar di hain.,सारी विन्डोस बैंड कर दी हैं।,0.2759
+WIN-01d,smallest,meher,windows,devanagari,357.3,सारी विंडोज़ बंद कर दी हैं।,सारी विंडोस बंद कर दी हैं।,0.0323
+WIN-02,smallest,meher,windows,roman,308.8,Driver side window thoda sa khol diya.,driver side window थोड़ा सा खोल दिया,0.0541
+WIN-03,smallest,meher,windows,mixed,376.1,Sunroof 40 percent खुला है.,sunroof 40% खुला है।,0.2963
+WIN-04,smallest,meher,windows,roman,352.7,Child lock on hai,चायल लोक आन है।,0.4706
+NAV-01,smallest,meher,navigation,roman,397.7,Koramangala 4th Block tak 18 minute lagenge.,खोरमंगला 4th block तक 18 मिनिट लागिंगे,0.1628
+NAV-01d,smallest,meher,navigation,devanagari,340.5,कोरमंगला फोर्थ ब्लॉक तक 18 मिनट लगेंगे।,कोर्मंग्ला फोथ ब्लॉक तक 18 मिनिट लगेंगे।,0.0816
+NAV-02,smallest,meher,navigation,roman,538.4,Outer Ring Road pe traffic heavy hai,आूटर रिंग रोड पे ट्राफिक हेवी है।,0.3611
+NAV-03,smallest,meher,navigation,roman,433.2,Indiranagar 100 Feet Road pe pahunch gaye hain.,इंडिरानगार 100 फीट रोड पे पहुछ गये हैं।,0.2444
+NAV-04,smallest,meher,navigation,mixed,381.3,अगला turn Silk Board junction पे है.,अगला टरन सिल्क बोट जंक्षण पे है।,0.3784
+NAV-05,smallest,meher,navigation,roman,392.2,Whitefield tak ka route Marathahalli se hoke jaata hai.,वाइट फिल तक का रूट मराता हाली से होके जाता है।,0.2642
+NAV-06,smallest,meher,navigation,roman,579.0,Aap Jayanagar 9th Block mein hain.,आप जायनगा 9 प्लॉक में हैं।,0.3438
+NAV-07,smallest,meher,navigation,roman,451.0,Yeh route toll-free hai lekin 12 kilometre lamba hai.,ये हर रूट तोल फ्री है लेकिन 12 किलोमेटर लामबा है।,0.2745
+NAV-08,smallest,meher,navigation,roman,326.9,Nearest petrol pump 2 point 3 kilometre door hai.,"Nearest petrol pump, 2.3 km door है.",0.2766
+MED-01,smallest,meher,media,roman,481.0,Arijit Singh ka gaana chala raha hoon.,अरिजित सिंग का गाना चला रहा हूं।,0.1429
+MED-02,smallest,meher,media,roman,381.4,Volume 60 percent kar diya.,वाल्यूम 60% कर दिया।,0.4615
+MED-03,smallest,meher,media,mixed,466.1,Playlist में 24 songs हैं.,प्लेलिस्ट में चौभी सॉंग्स हैं।,0.5385
+MED-04,smallest,meher,media,roman,421.6,Bluetooth se connect ho gaya. Ab music play kar sakte hain.,"Bluetooth से connect हो गया, अब music प्ले कर सकते हैं.",0.1071
+MED-05,smallest,meher,media,roman,366.9,FM 93.5 Red FM laga diya.,FM 93.5 Red FM लगा दिया।,0.0
+VEH-01,smallest,meher,status,roman,364.3,Fuel 24 percent hai — lagbhag 180 kilometre chal jayega.,"फ्यूल 24% है, लगभभग 180 किलोमेटर चाल जायेगा।",0.3962
+VEH-02,smallest,meher,status,roman,1158.1,Tyre pressure front left mein thoda kam hai.,Tire pressure front लेफ्ट में थोड़ा कम हैं.,0.2093
+VEH-03,smallest,meher,status,mixed,323.0,Battery 78% चार्ज है.,बाट्री 78 प्रतिशाज है।,0.4762
+VEH-04,smallest,meher,status,roman,430.7,Service due hai. 1,सर्विस द्यू है उनो।,0.4706
+VEH-05,smallest,meher,status,roman,263.5,Engine temperature normal hai.,अंजिन टेमपिच्टुर नोमल है।,0.3793
+VEH-06,smallest,meher,status,roman,314.6,Seatbelt rear right mein nahi laga hai.,सीट बेल्ट रिया राइट में नहीं लगा है।,0.3684
+MAN-01,smallest,meher,manual,roman,378.0,Owner's manual ke hisaab se,Owners Manual के हिसाब से,0.0769
+MAN-02,smallest,meher,manual,roman,427.6,Yeh warning light low oil pressure batata hai. Gaadi rok dijiye.,यह हा वाणिंग लाइट लो ओयल प्रेशर बताता है  गाडी रोग दीजिये,0.3443
+MAN-03,smallest,meher,manual,mixed,387.3,Spare tyre बूट के नीचे है,स्पेर टायर बूट के निजे है,0.25
+MAN-04,smallest,meher,manual,roman,435.4,Regenerative braking ko level 2 pe rakhna better hai city mein.,Regenerative Braking को Level 2 पे रखना बेटर है City में.,0.0968
+MAN-05,smallest,meher,manual,roman,349.1,ABS aur ESP dono active hain.,ABS और ESP दोनों आक्टिव हैं.,0.1786
+NUM-01,smallest,meher,numbers,roman,345.6,Abhi shaam ke 6 baj kar 45 minute hue hain.,अभी शाम के 6 बाजकर 45 मिनिट हूँ हैं।,0.1951
+NUM-01d,smallest,meher,numbers,devanagari,434.2,अभी शाम के 6 बजकर 45 मिनट हुए हैं।,अभी शाम के 6 बचकर 45 मिनिट हुए हैं।,0.0698
+NUM-02,smallest,meher,numbers,roman,361.6,Aapki EMI 12,आपकी EMI 12,0.0909
+NUM-03,smallest,meher,numbers,mixed,525.8,Trip meter 1,ट्रिप मीटर यूंग।,0.75
+NUM-04,smallest,meher,numbers,roman,393.8,Average 18 point 4 kilometre per litre hai.,अवरेज दिक्स वेट पॉंट काप किलोमेतर पर लिटर है।,0.6429
+NUM-05,smallest,meher,numbers,roman,282.5,Booking reference AB 7 7 4 2 K hai.,बुकिंग रेफरंस AB774-2K है।,0.4242
+NUM-06,smallest,meher,numbers,roman,540.9,Charging 80 percent tak 35 minute lega.,चाजिंग 80% तक 35 मिनिट लेगा,0.3947
+CNV-01,smallest,meher,conversational,roman,570.3,Haan bilkul,हा बिल्कुल,0.2
+CNV-02,smallest,meher,conversational,roman,353.9,Sorry,Sorry,0.0
+CNV-03,smallest,meher,conversational,mixed,495.5,ठीक है,चीके।,0.6667
+CNV-04,smallest,meher,conversational,roman,353.2,Aaj Bengaluru mein baarish ka chance hai,आज बैंगलोरो में बारिश का चान्स है,0.2895
+CNV-05,smallest,meher,conversational,roman,354.6,Good morning! Kahan chalna hai aaj?,गुद मौनिंग! कहाँ चलना है आज?,0.2903
+CNV-06,smallest,meher,conversational,roman,623.0,Ye kaam main abhi nahi kar sakta,ये काम मैं अभी नहीं कर सकता।,0.1613
+CNV-07,smallest,meher,conversational,roman,352.1,Bas ho gaya.,बेस हो गया।,0.1818
+CNV-08,smallest,meher,conversational,mixed,335.6,Samajh gaya — navigation start कर रहा हूँ.,समझ गया नाविगेशन स्टाट कर रहूं।,0.3023
+ERR-01,smallest,meher,errors,roman,438.3,Network nahi mil raha,नेटवर्क नहीं मिल रहा।,0.2857
+ERR-02,smallest,meher,errors,roman,320.4,Yeh command samajh nahi aayi.,ये कमान समझ नहीं आई।,0.2963
+ERR-03,smallest,meher,errors,mixed,1096.7,Connection टूट गया है,कनेक्षिन तूट गया है।,0.3333
+ERR-04,smallest,meher,errors,roman,351.4,Safety ke liye ye driving ke dauraan available nahi hai.,सेफ्टी के लिए ये द्राइविंग के दौरान अवेलेबल नहीं है।,0.2778
+PHN-01,smallest,meher,phone,roman,479.2,Priya ko call kar raha hoon.,प्रिया को काल कर रहा हूं।,0.1923
+PHN-02,smallest,meher,phone,roman,492.7,Rajesh Kumar Sharma ka number save kiya hai.,राजेश कुमार शर्मा का नंबर सेव किया है।,0.1628
+PHN-03,smallest,meher,phone,roman,407.3,Missed call hai Amma se,Miss call है अम्मा से,0.087
+PHN-04,smallest,meher,phone,mixed,291.0,Message भेज दिया है.,मेसेज भीज दिया है।,0.2273
+LNG-01,smallest,meher,long,roman,1190.4,Aapki gaadi ka next service 3,आपकी गाडी का नेक्स सर्विस त्री,0.3704
+LNG-02,smallest,meher,long,mixed,394.0,Route पे तीन toll plazas हैं और कुल toll लगभग 240 rupaye होगा. FASTag balance sufficient है,रूट पे तीन तोल प्लाजास हैं और कुल तोल लगभभग 240 रूपाय होगा.  Fastag balance sufficient हैं.,0.1089
+LNG-03,smallest,meher,long,roman,343.9,Regenerative braking ka matlab hai ki jab aap accelerator chhodte hain,Regenerative Braking का मतलब है कि जहाँ आप Accelerator चोडते हैं.,0.1449
+EDG-01,smallest,meher,edge,roman,343.0,Toh?,तु,0.6667
+EDG-02,smallest,meher,edge,roman,280.3,OK.,Okay.,1.0
+EDG-03,smallest,meher,edge,devanagari,362.7,हाँ।,हाँ,0.0
+EDG-04,smallest,meher,edge,roman,628.9,22.5,22.5,0.0
+EDG-05,smallest,meher,edge,roman,373.9,Hmm... theek hai.,हुँ तीके।,0.75
+EDG-06,smallest,meher,edge,roman,420.2,Kya aapne kaha 'window kholo' ya 'window band karo'?,"क्या आपने कहां, विन्डो खोलो या विन्डो बान करो?",0.1522

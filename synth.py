@@ -23,9 +23,15 @@ import os
 import sys
 import time
 import base64
+import asyncio
+import ssl
+import certifi
+import wave
+import io
 from pathlib import Path
 
 import requests
+import websockets
 
 OUT = Path("out")
 MANIFEST = OUT / "manifest.json"
@@ -46,61 +52,130 @@ TIMEOUT = 60
 
 
 def synth_sarvam(text, voice, api_key):
-    """Sarvam Bulbul v3. Check current model string + endpoint in their docs;
-    the API surface moves faster than any hardcoded value here.
+    """Sarvam Bulbul v3 via WebSockets for true TTFA streaming.
     Available v3 voices: shubh, aditya, ritu, priya, neha, rahul, pooja,
     rohan, simran, kavya, amit, dev, ishita, shreya, and ~25 more.
     Note: v2 voices (anushka, manisha, etc.) do NOT work with v3."""
-    t0 = time.perf_counter()
-    r = requests.post(
-        "https://api.sarvam.ai/text-to-speech",
-        headers={"api-subscription-key": api_key,
-                 "Content-Type": "application/json"},
-        json={
-            "text": text,
-            "language_code": "hi-IN",
-            "speaker": voice,
-            "model": "bulbul:v3",
-            "speech_sample_rate": 24000,
-        },
-        timeout=TIMEOUT,
-    )
-    ttfa = (time.perf_counter() - t0) * 1000
-    r.raise_for_status()
-    payload = r.json()
-    audio_b64 = payload["audios"][0]
-    return base64.b64decode(audio_b64), ttfa
+    async def _run():
+        t0 = time.perf_counter()
+        uri = "wss://api.sarvam.ai/text-to-speech/ws"
+        headers = {"Api-Subscription-Key": api_key}
+        ssl_context = ssl.create_default_context(cafile=certifi.where())
+        ttfa = None
+        chunks = []
+        async with websockets.connect(uri, additional_headers=headers, ssl=ssl_context) as ws:
+            # Send configuration
+            await ws.send(json.dumps({
+                "type": "config",
+                "data": {
+                    "language_code": "hi-IN",
+                    "speaker": voice,
+                    "model": "bulbul:v3"
+                }
+            }))
+            # Send text payload
+            await ws.send(json.dumps({
+                "type": "text",
+                "data": {"text": text}
+            }))
+            # Force generation with flush
+            await ws.send(json.dumps({"type": "flush"}))
+            
+            try:
+                while True:
+                    try:
+                        msg = await asyncio.wait_for(ws.recv(), timeout=2.0)
+                    except asyncio.TimeoutError:
+                        break  # Assume generation is complete if no data for 2 seconds
+                        
+                    try:
+                        data = json.loads(msg)
+                    except json.JSONDecodeError:
+                        continue
+                    
+                    if data.get("type") == "audio":
+                        if ttfa is None:
+                            ttfa = (time.perf_counter() - t0) * 1000
+                        audio_b64 = data.get("data", {}).get("audio", "")
+                        if audio_b64:
+                            chunks.append(base64.b64decode(audio_b64))
+                    elif data.get("type") == "completion":
+                        break
+            except Exception as e:
+                print(f"Sarvam WS Error: {e}", file=sys.stderr)
+        return b"".join(chunks), ttfa or 0.0
+
+    return asyncio.run(_run())
 
 
 def synth_smallest(text, voice, api_key):
-    """Smallest.ai Lightning v3.1. Streaming so TTFA is meaningful.
+    """Smallest.ai Lightning v3.1 via WebSockets for true TTFA streaming.
     Note: v2 voices (like raman) are deprecated. Use 'meher' or 'aviraj' (Pro pool)
     or 'devansh' or 'sunidhi' (Standard pool)."""
-    t0 = time.perf_counter()
-    # Handle Pro voices (e.g. meher, aviraj for Hinglish)
-    model = "lightning_v3.1_pro" if voice in ["meher", "aviraj"] else "lightning_v3.1"
-    r = requests.post(
-        "https://api.smallest.ai/waves/v1/lightning-v3.1/get_speech",
-        headers={"Authorization": f"Bearer {api_key}",
-                 "Content-Type": "application/json"},
-        json={
-            "text": text,
-            "voice_id": voice,
-            "sample_rate": 24000,
-            "output_format": "wav",
-            "model": model,
-        },
-        stream=True,
-        timeout=TIMEOUT,
-    )
-    r.raise_for_status()
-    chunks, ttfa = [], None
-    for chunk in r.iter_content(chunk_size=4096):
-        if chunk:
-            if ttfa is None:
-                ttfa = (time.perf_counter() - t0) * 1000
-            chunks.append(chunk)
-    return b"".join(chunks), ttfa or 0.0
+    async def _run():
+        t0 = time.perf_counter()
+        model = "lightning_v3.1_pro" if voice in ["meher", "aviraj"] else "lightning_v3.1"
+        uri = f"wss://api.smallest.ai/waves/v1/lightning-v3.1/get_speech/stream?api_key={api_key}"
+        ssl_context = ssl.create_default_context(cafile=certifi.where())
+        ttfa = None
+        chunks = []
+        async with websockets.connect(uri, ssl=ssl_context) as ws:
+            payload = {
+                "text": text,
+                "voice_id": voice,
+                "sample_rate": 24000,
+                "output_format": "wav",
+                "model": model,
+            }
+            await ws.send(json.dumps(payload))
+            
+            try:
+                while True:
+                    try:
+                        message = await asyncio.wait_for(ws.recv(), timeout=2.0)
+                    except asyncio.TimeoutError:
+                        break # Assume generation is complete if no data for 2 seconds
+                        
+                    if isinstance(message, bytes):
+                        if ttfa is None:
+                            ttfa = (time.perf_counter() - t0) * 1000
+                        chunks.append(message)
+                    elif isinstance(message, str):
+                        try:
+                            event = json.loads(message)
+                            if event.get("event") == "end_of_audio" or event.get("type") == "end_of_audio":
+                                break
+                            
+                            # Check if the JSON contains audio data
+                            data_field = event.get("data")
+                            if isinstance(data_field, dict):
+                                audio_data = data_field.get("audio")
+                            else:
+                                audio_data = event.get("audio")
+                                
+                            if audio_data and isinstance(audio_data, str):
+                                if ttfa is None:
+                                    ttfa = (time.perf_counter() - t0) * 1000
+                                chunks.append(base64.b64decode(audio_data))
+                        except json.JSONDecodeError:
+                            pass
+            except Exception as e:
+                print(f"Smallest WS Error: {e}", file=sys.stderr)
+                
+        pcm_data = b"".join(chunks)
+        if not pcm_data:
+            return b"", 0.0
+            
+        wav_io = io.BytesIO()
+        with wave.open(wav_io, 'wb') as wav_file:
+            wav_file.setnchannels(1) # mono
+            wav_file.setsampwidth(2) # 16-bit
+            wav_file.setframerate(24000)
+            wav_file.writeframes(pcm_data)
+            
+        return wav_io.getvalue(), ttfa or 0.0
+
+    return asyncio.run(_run())
 
 
 def synth_elevenlabs(text, voice, api_key):

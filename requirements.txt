@@ -2,3 +2,5 @@ requests
 faster-whisper
 indic-transliteration
 jiwer
+websockets
+google-auth
